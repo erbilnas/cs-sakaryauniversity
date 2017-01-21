@@ -11,8 +11,8 @@
 ** DERSİN ALINDIĞI GRUP...: C GRUBU
 **
 ** ÖDEVİN KONUSU..........: GİRİLEN N DEĞERİNİ ÖZYİNELEMELİ/YİNELEMELİ FONKSİYONA SOKMA, 
-**							KOORDİNATLARI GİRİLEN DİKDÖRTGENİN İÇİNDEKİ NOKTAYI HESAPLAMA, 
-**							POİNTER KULLANARAK BÜYÜK/KÜÇÜK HARF DEĞİŞİMİ VE İKİ KARAKTER DİZİSİNİN YERİNİ DEĞİŞTİRME
+**			    KOORDİNATLARI GİRİLEN DİKDÖRTGENİN İÇİNDEKİ NOKTAYI HESAPLAMA, 
+**			    POİNTER KULLANARAK BÜYÜK/KÜÇÜK HARF DEĞİŞİMİ VE İKİ KARAKTER DİZİSİNİN YERİNİ DEĞİŞTİRME
 ********************************************************************************************************************/
 
 #include <iostream>
