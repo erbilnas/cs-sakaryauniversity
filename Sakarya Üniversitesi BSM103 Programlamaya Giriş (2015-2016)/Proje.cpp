@@ -11,7 +11,7 @@
 ** DERSİN ALINDIĞI GRUP...: C GRUBU
 **
 ** ÖDEVİN KONUSU..........: HASTA KAYDI ALMA, HASTA KAYDI SİLME, RANDEVU ALMA YA DA SİLME, HASTA BİLGİLERİNİ DÜZENLEME,
-**							HASTALARIN LİSTELENMESİ VE BİLGİLERİNİN DOSYALANMASINI YAPAN TEMEL HASTANE YAZILIMI
+**			    HASTALARIN LİSTELENMESİ VE BİLGİLERİNİN DOSYALANMASINI YAPAN TEMEL HASTANE YAZILIMI
 ********************************************************************************************************************/
 
 #include <iostream>
