@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CalculateMWTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CommentInfo" Relationship="CalculateMWTModel.FK_CommentInfo_AccountInfo1" FromRole="AccountInfo" ToRole="CommentInfo" />
+  </EntityType>
+  <EntityContainer Name="CalculateMWTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountInfoes" EntityType="Self.AccountInfo" />
+    <EntitySet Name="CommentInfoes" EntityType="CalculateMWTModel.CommentInfo" />
+    <EntitySet Name="MovieInfoes" EntityType="CalculateMWTModel.MovieInfo" />
+    <EntitySet Name="sysdiagrams" EntityType="CalculateMWTModel.sysdiagram" />
+    <EntitySet Name="TVInfoes" EntityType="CalculateMWTModel.TVInfo" />
+    <AssociationSet Name="FK_CommentInfo_AccountInfo1" Association="CalculateMWTModel.FK_CommentInfo_AccountInfo1">
+      <End Role="AccountInfo" EntitySet="AccountInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentInfo_MovieInfo" Association="CalculateMWTModel.FK_CommentInfo_MovieInfo">
+      <End Role="MovieInfo" EntitySet="MovieInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentInfo_TVInfo" Association="CalculateMWTModel.FK_CommentInfo_TVInfo">
+      <End Role="TVInfo" EntitySet="TVInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+    <EntitySet Name="BookInfoes" EntityType="CalculateMWTModel.BookInfo" />
+    <AssociationSet Name="FK_CommentInfo_BookInfo" Association="CalculateMWTModel.FK_CommentInfo_BookInfo">
+      <End Role="BookInfo" EntitySet="BookInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+    <EntitySet Name="GameInfoes" EntityType="CalculateMWTModel.GameInfo" />
+    <AssociationSet Name="FK_CommentInfo_GameInfo" Association="CalculateMWTModel.FK_CommentInfo_GameInfo">
+      <End Role="GameInfo" EntitySet="GameInfoes" />
+      <End Role="CommentInfo" EntitySet="CommentInfoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CommentInfo">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="content_id" Type="Int32" />
+    <Property Name="comment_id" Type="Int32" />
+    <Property Name="comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AccountInfo" Relationship="CalculateMWTModel.FK_CommentInfo_AccountInfo1" FromRole="CommentInfo" ToRole="AccountInfo" />
+    <NavigationProperty Name="MovieInfo" Relationship="CalculateMWTModel.FK_CommentInfo_MovieInfo" FromRole="CommentInfo" ToRole="MovieInfo" />
+    <NavigationProperty Name="TVInfo" Relationship="CalculateMWTModel.FK_CommentInfo_TVInfo" FromRole="CommentInfo" ToRole="TVInfo" />
+    <NavigationProperty Name="BookInfo" Relationship="CalculateMWTModel.FK_CommentInfo_BookInfo" FromRole="CommentInfo" ToRole="BookInfo" />
+    <NavigationProperty Name="GameInfo" Relationship="CalculateMWTModel.FK_CommentInfo_GameInfo" FromRole="CommentInfo" ToRole="GameInfo" />
+  </EntityType>
+  <EntityType Name="MovieInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="producer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hours" Type="Int32" />
+    <Property Name="info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CommentInfoes" Relationship="CalculateMWTModel.FK_CommentInfo_MovieInfo" FromRole="MovieInfo" ToRole="CommentInfo" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TVInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="producer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hours" Type="Int32" />
+    <Property Name="info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CommentInfoes" Relationship="CalculateMWTModel.FK_CommentInfo_TVInfo" FromRole="TVInfo" ToRole="CommentInfo" />
+  </EntityType>
+  <Association Name="FK_CommentInfo_AccountInfo1">
+    <End Type="CalculateMWTModel.AccountInfo" Role="AccountInfo" Multiplicity="1" />
+    <End Type="CalculateMWTModel.CommentInfo" Role="CommentInfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AccountInfo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentInfo_MovieInfo">
+    <End Type="CalculateMWTModel.MovieInfo" Role="MovieInfo" Multiplicity="0..1" />
+    <End Type="CalculateMWTModel.CommentInfo" Role="CommentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MovieInfo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="content_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentInfo_TVInfo">
+    <End Type="CalculateMWTModel.TVInfo" Role="TVInfo" Multiplicity="0..1" />
+    <End Type="CalculateMWTModel.CommentInfo" Role="CommentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TVInfo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="content_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="BookInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hours" Type="Int32" />
+    <Property Name="info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CommentInfoes" Relationship="CalculateMWTModel.FK_CommentInfo_BookInfo" FromRole="BookInfo" ToRole="CommentInfo" />
+  </EntityType>
+  <Association Name="FK_CommentInfo_BookInfo">
+    <End Type="CalculateMWTModel.BookInfo" Role="BookInfo" Multiplicity="0..1" />
+    <End Type="CalculateMWTModel.CommentInfo" Role="CommentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookInfo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="content_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GameInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="developer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hours" Type="Int32" />
+    <Property Name="info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CommentInfoes" Relationship="CalculateMWTModel.FK_CommentInfo_GameInfo" FromRole="GameInfo" ToRole="CommentInfo" />
+  </EntityType>
+  <Association Name="FK_CommentInfo_GameInfo">
+    <End Type="CalculateMWTModel.GameInfo" Role="GameInfo" Multiplicity="0..1" />
+    <End Type="CalculateMWTModel.CommentInfo" Role="CommentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GameInfo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CommentInfo">
+        <PropertyRef Name="content_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

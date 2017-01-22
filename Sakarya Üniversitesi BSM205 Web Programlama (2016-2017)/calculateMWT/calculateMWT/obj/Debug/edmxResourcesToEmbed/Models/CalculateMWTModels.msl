@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CalculateMWTModelStoreContainer" CdmEntityContainer="CalculateMWTEntities">
+    <EntitySetMapping Name="AccountInfoes">
+      <EntityTypeMapping TypeName="CalculateMWTModel.AccountInfo">
+        <MappingFragment StoreEntitySet="AccountInfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentInfoes">
+      <EntityTypeMapping TypeName="CalculateMWTModel.CommentInfo">
+        <MappingFragment StoreEntitySet="CommentInfo">
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="comment_id" ColumnName="comment id" />
+          <ScalarProperty Name="content_id" ColumnName="content id" />
+          <ScalarProperty Name="user_id" ColumnName="user id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieInfoes">
+      <EntityTypeMapping TypeName="CalculateMWTModel.MovieInfo">
+        <MappingFragment StoreEntitySet="MovieInfo">
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="hours" ColumnName="hours" />
+          <ScalarProperty Name="producer" ColumnName="producer" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CalculateMWTModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVInfoes">
+      <EntityTypeMapping TypeName="CalculateMWTModel.TVInfo">
+        <MappingFragment StoreEntitySet="TVInfo">
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="hours" ColumnName="hours" />
+          <ScalarProperty Name="producer" ColumnName="producer" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookInfoes">
+      <EntityTypeMapping TypeName="CalculateMWTModel.BookInfo">
+        <MappingFragment StoreEntitySet="BookInfo">
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="hours" ColumnName="hours" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameInfoes">
+      <EntityTypeMapping TypeName="CalculateMWTModel.GameInfo">
+        <MappingFragment StoreEntitySet="GameInfo">
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="hours" ColumnName="hours" />
+          <ScalarProperty Name="developer" ColumnName="developer" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

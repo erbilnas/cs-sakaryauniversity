@@ -1,0 +1,278 @@
+﻿@model IEnumerable<calculateMWT.Models.GameInfo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculate My Wasted Time</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/Template/")bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/Template/")dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Template/")dist/css/skins/skin-black.min.css">
+</head>
+
+<body class="hold-transition skin-black sidebar-mini">
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                <img src="@Url.Content("~/Content/Template/")dist/erbil-nas.jpg" class="user-image" alt="User Image">
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                <span class="hidden-xs">Erbil Nas</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- The user image in the menu -->
+                                <li class="user-header">
+                                    <img src="@Url.Content("~/Content/Template/")dist/erbil-nas.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        Erbil Nas
+                                        <small>@Resources.Home.admin</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-default btn-flat">@Resources.Home.show_profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Notifications Menu -->
+                        <li class="dropdown notifications-menu">
+                            <!-- Menu toggle button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">0</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">@Resources.Home.not</li>
+                                <li>
+                                    <!-- Inner Menu: contains the notifications -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- start notification -->
+                                            <a href="#">
+
+                                            </a>
+                                        </li>
+                                        <!-- end notification -->
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">@Resources.Home.view_all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="active">
+                        <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>@Resources.Home.home</span></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i><span>@Resources.Home.search</span></a></li>
+                    <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>@Resources.Home.add_submit</span></a></li>
+                    <li><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i><span>@Resources.Home.submits</span></a></li>
+                    <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>@Resources.Home.comments</span></a></li>
+                    <li><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i><span>@Resources.Home.stats</span></a></li>
+                    <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i><span>@Resources.Home.random</span></a></li>
+                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><span>@Resources.Home.faq</span></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span>@Resources.Home.s_out</span></a></li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <!-- Your Page Content Here -->
+                <form class="form-inline">
+                   @*<div class="btn-group btn-group-justified">
+                        <a href="#" class="btn btn-link">Games</a>
+                        <a href="#" class="btn btn-link">Books</a>
+                        <a href="#" class="btn btn-link">Movies</a>
+                        <a href="#" class="btn btn-link">TV Series</a>
+                    </div>*@
+                    <div class="input-group col-md-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            @Resources.Home.games
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <table class="table">
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.name)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.developer)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.hours)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.info)
+                                                </th>
+                                                <th></th>
+                                            </tr>
+
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.name)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.developer)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.hours)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.info)
+                                                    </td>
+                                                    <td>
+                                                        @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                                                        @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                                                        @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                                                    </td>
+                                                </tr>
+                                            }
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                            @Resources.Home.books
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            @Resources.Home.movies
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            @Resources.Home.tv
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                           @using (Html.BeginForm("Index", "Games", FormMethod.Get))
+                           {
+                            <p>
+                                @Html.ActionLink(Resources.Home.create_new, "Create")
+                            </p>
+                           }
+
+                        @*<input type="text" class="form-control"  id="email" placeholder="Search">*@
+
+                        <br /><br />
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#demo"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> @Resources.Home.search_opt</button>
+                        <div id="demo" class="collapse">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- /.tab-pane -->
+            </div>
+            <div class="form-group">
+                <label for="sel1"><i class="fa fa-flag" aria-hidden="true"></i> @Resources.Home.lang</label>
+                
+                    @Html.ActionLink("TR","Index", new { lang = "tr" })
+                    @Html.ActionLink("ENG", "Index", new { lang = "en" })
+               
+            </div>
+            <button type="button" class="btn btn-link"><i class="fa fa-wrench" aria-hidden="true"></i> @Resources.Home.edit_prof</button>
+            <br /><br />
+            <button type="button" class="btn btn-link"><i class="fa fa-user-times" aria-hidden="true"></i> @Resources.Home.delete</button>
+            <button type="button" class="btn btn-link"><i class="fa fa-sign-out" aria-hidden="true"></i> @Resources.Home.s_out</button>
+        </aside>
+    </div>
+
+    <!-- jQuery 2.2.3 -->
+    <script src="@Url.Content("~/Content/Template/")plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="@Url.Content("~/Content/Template/")bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="@Url.Content("~/Content/Template/")dist/js/app.min.js"></script>
+
+</body>
+</html>
