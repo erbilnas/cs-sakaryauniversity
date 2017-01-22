@@ -1,0 +1,6 @@
+Program sembolleri göstermiyosa 
+1-Konsol özellikleri->eski konsolu kullan kutusunu iþaretleyin. olmassa...
+2-Yazý tipini tarama yazý tipleri olarak ayarlayýn.
+
+***Program Dev-C++ yoluyla MinGW derleyicisiyle derlenmiþtir.
+***Makefile otomatik olarak gerektiði biçimde Dev-C++ tarafýndan oluþturulmuþtur.
