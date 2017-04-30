@@ -1,0 +1,149 @@
+/*Üzerinde değişiklik yaptığımız .css dosyası*/
+
+.sinlge-post-meta li i:after,
+.blog-post-area 
+.post-meta ul li i:after {
+  border-color:transparent transparent transparent #FE980F;
+    border-width:4px;
+  border-style: solid;
+}
+
+.overlay-icon {
+  background: #FE980F;
+  border-radius: 3px;
+}
+
+a#scrollUp {
+   padding: 5px 10px;
+  background: #FE980F;
+  color: #FFF;
+}
+
+.companyinfo h2  span{
+  color:#FE980F;
+}
+
+.companyinfo h2 {
+  color: #B4B1AB;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.companyinfo p {
+  color: #B3B3AD;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.replay-box form input {
+  border: 1px solid #F7F7F0;
+  color: #ADB2B2;
+  font-size: 12px;
+  margin-bottom: 22px;
+  padding: 8px;
+  width: 100%;
+}
+
+.btn.btn-primary {
+  background:#FE980F;
+  border: 0 none;
+  border-radius: 0;
+  margin-top: 16px;
+}
+
+#contact-page .form-control {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.sinlge-post-meta li i {
+  background:#FE980F;
+  color: #FFFFFF;
+}
+
+
+/*  Dropdown menu*/
+
+.navbar-header 
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+.nav.navbar-nav > li:hover > ul.sub-menu{
+  display: block;
+  -webkit-animation: fadeInUp 400ms;
+  -moz-animation: fadeInUp 400ms;
+  -ms-animation: fadeInUp 400ms;
+  -o-animation: fadeInUp 400ms;
+  animation: fadeInUp 400ms;
+}
+
+ul.sub-menu {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 220px;
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	display: none;
+	z-index: 999;
+}
+
+.dropdown ul.sub-menu li .active{
+  color: #FDB45E;
+  padding-left: 0;
+}
+
+.navbar-nav li ul.sub-menu li{
+  padding: 10px 20px 0 ;
+}
+
+.navbar-nav li ul.sub-menu li:last-child{
+  padding-bottom: 20px;
+}
+
+.navbar-nav li ul.sub-menu li a{
+  color: #fff;
+}
+
+.navbar-nav li ul.sub-menu li a:hover{
+    color: #FDB45E;
+}
+
+#slider {
+  padding-bottom: 45px;
+}
+
+.carousel-indicators li {
+  background: #C4C4BE;
+}
+
+.carousel-indicators li.active {
+	  background: #FE980F;
+}
+
+.left-sidebar h2, .brands_products h2 {
+  color: #FE980F;
+  margin: 0 auto 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.category-products .panel-default .panel-heading {
+  background-color: #FFFFFF;
+  border: 0 none;
+  color: #FFFFFF;
+  padding: 5px 20px;
+}
+
+.pagination  .active  a, .pagination  .active  span, .pagination  .active  a:hover, .pagination  .active  span:hover, .pagination  .active  a:focus, .pagination  .active  span:focus {
+  background-color: #FE980F;
+  border-color: #FE980F;
+}
