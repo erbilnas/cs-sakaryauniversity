@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bicimsel-odev02", "bicimsel-odev02\bicimsel-odev02.vcxproj", "{819F2DF7-1CA3-402B-8AA2-301F95895F9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Debug|x64.ActiveCfg = Debug|x64
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Debug|x64.Build.0 = Debug|x64
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Debug|x86.ActiveCfg = Debug|Win32
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Debug|x86.Build.0 = Debug|Win32
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Release|x64.ActiveCfg = Release|x64
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Release|x64.Build.0 = Release|x64
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Release|x86.ActiveCfg = Release|Win32
+		{819F2DF7-1CA3-402B-8AA2-301F95895F9F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B32FF56-CC78-45CC-98C0-8A6CD38748F1}
+	EndGlobalSection
+EndGlobal
