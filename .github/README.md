@@ -1,13 +1,13 @@
 # Sakarya Üniversitesi | Bilgisayar ve Bilişim Bilimleri Fakültesi
 
 ------------------------------------------------------------------------------------------------------------------------------
-TARİHÇE
+<b>TARİHÇE</b>
 
 1994 yılında eğitim-öğretime başlayan bölümümüz lisans, yüksek lisans ve doktora programlarının yanı sıra tamamen uzaktan eğitimle verdiğimiz e-Bilişim Teknolojileri Tezsiz Yüksek Lisans programıyla da değişik meslek mezunlarını bilişim uzmanı yapmaya devam edeceğiz.Üniversite-sanayi işbirliğinde Türkiye'de devrim sayılabilecek bir projeyi Ford Otosan'la 2008 Nisan ayında başlattık ve büyük bir başarıyla sürdürüyoruz. Gelişen eğitim kadromuz ile arka arkaya 2 yıl Bilgisayar Mühendisliği bölümleri arasında öğretim elemanı başına en fazla SCI yayın yapma başarılarını da göstermiştir.Sapanca gölünün eşsiz manzarası ve geniş yurt imkanlarıyla kampüsümüz, hayatınızın önemli yıllarının bir kısmını geçirirken mutlu olmanızı da sağlayacaktır.  
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-MİSYON ve VİZYON
+<b>MİSYON ve VİZYON</b>
 
 <i>Misyonumuz:</i>
 Bilgisayar ve bilişim alanındaki teknolojik ve bilimsel gelişmeleri takip edebilen, yetkin, yaratıcı, bilimsel üretim gücüne sahip, bilim ve deneyi esas kabul eden, katılımcı, sayısal ve akademik düşünme gücüne sahip, öğrenmeyi öğrenmiş, sorumluluk almaktan kaçınmayan, lisans ve lisansüstü seviyede bireyler yetiştiren ve teknoloji ve bilim üreten ve uluslararası alanda üretilen bilgiyi oplumsal ve endüstriyel faydaya dönüştürmeye katkıda bulunan bir bölüm olmaktır.
@@ -23,7 +23,7 @@ Temelde, yapısında bilgisayar teknolojilerini barındıran ve bu teknolojileri
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-BÖLÜM BAŞKANI'NDAN
+<b>BÖLÜM BAŞKANI'NDAN</b>
 
 Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü 1994-1995 eğitim-öğretim yılında eğitime başlamıştır. Ders içerik ve programlarını çağın ihtiyaçlarına uygun bir biçimde hazırlayıp güncelleyerek ve bilişim alanında kariyer sahibi akademisyenleri bünyesine katarak sevgili öğrencilerimize en güncel bilgileri ulaştırmayı ve böylece iş hayatına uyumlu ve güçlü katılımını sağlamayı amaçlamıştır.
 
