@@ -1,0 +1,58 @@
+30h ile 50h adresleri arasýndaki verilerden 3’ün katlarý olanlarý 50h adresinden itibaren
+kopyalayan ve yeni oluþan dizinin en büyük elemanýnýn 3’ün kaç katý olduðunu 70h adresine
+kaydeden programý yazýnýz
+
+DAT B 00H
+MOV B,#03H
+MOV R0,#30H
+MOV R1.#50H
+tekrar:
+		MOV A,@R0
+		DIV AB
+		CJNE B,#00H,ucun_katý_deðil
+		MOV A,@R0
+		MOV @R1,A
+		INC R1
+		INC R0
+		MOV B,#03H
+		CJNE RO,#50H,tekrar
+		DEC R1
+		MOV A,@R1
+		SJMP diger_islem
+		
+
+
+ucun_katý_deðil:
+			INC R0
+			MOV B,#03H
+			CJNE RO,#50H,tekrar
+			DEC R1
+			MOV A,@R1
+			SJMP diger_islem
+
+diger_islem:
+			DEC R1
+			CJNE A,@R1,karsilastir
+			CJNE R1,#49H,diger_islem
+			SJMP son
+
+
+karsilastir:
+			JNC aku_degismez
+			MOV A,@R1
+			CJNE R1,#49H,diger_islem
+			SJMP son
+aku_degismez:
+			CJNE R1,#49H,diger_islem
+			SJMP son
+
+son:
+			MOV B,#03H
+			DIV AB
+			MOV 70H,A
+			END
+			
+
+
+		
+			
