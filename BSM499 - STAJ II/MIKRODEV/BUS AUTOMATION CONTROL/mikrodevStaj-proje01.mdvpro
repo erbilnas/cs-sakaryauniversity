@@ -1,0 +1,20 @@
+#--------------------------------------------------
+#
+#Projeyi olusturan Mikrodiagram 2018-08-13T10:49:08
+#
+#--------------------------------------------------
+
+MDV_FILES += main.mdv
+MAIN_DEVICE = MP211E
+
+BG_COLOR = BEBEBE
+GATE_COLOR = CEFFA0
+SHOW_BLOCKNO = 1
+SHOW_BLOCKIO = 0
+SHOW_MBUSREGADR = 1
+SHOW_BLOCKNAME = 0
+DEVICE_IP = 192.168.2.200
+DEVICE_PORT = 502
+DEVICE_ARCH = ARM
+PLC_LANGUAGE = FBD
+
