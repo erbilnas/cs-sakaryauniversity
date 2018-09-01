@@ -1,0 +1,20 @@
+#----------------------------------------------------
+#
+# Project created by Mikrodiagram 2018-08-28T08:46:49
+#
+#----------------------------------------------------
+
+MDV_FILES += main.mdv
+MAIN_DEVICE = MP211E
+
+DEVICE_IP = 192.168.2.200
+DEVICE_PORT = 502
+DEVICE_ARCH = ARM
+PLC_LANGUAGE = FBD
+
+SHOW_BLOCKNO = 0
+SHOW_MBUSREGADR = 0
+SHOW_BLOCKNAME = 0
+SHOW_BLOCKIO = 0
+BG_COLOR = bebebe
+GATE_COLOR = aaff7f
