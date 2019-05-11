@@ -1,6 +1,5 @@
 # Sakarya Üniversitesi | Bilgisayar ve Bilişim Bilimleri Fakültesi
 
-------------------------------------------------------------------------------------------------------------------------------
 <b>TARİHÇE</b>
 
 1994 yılında eğitim-öğretime başlayan bölümümüz lisans, yüksek lisans ve doktora programlarının yanı sıra tamamen uzaktan eğitimle verdiğimiz e-Bilişim Teknolojileri Tezsiz Yüksek Lisans programıyla da değişik meslek mezunlarını bilişim uzmanı yapmaya devam edeceğiz.Üniversite-sanayi işbirliğinde Türkiye'de devrim sayılabilecek bir projeyi Ford Otosan'la 2008 Nisan ayında başlattık ve büyük bir başarıyla sürdürüyoruz. Gelişen eğitim kadromuz ile arka arkaya 2 yıl Bilgisayar Mühendisliği bölümleri arasında öğretim elemanı başına en fazla SCI yayın yapma başarılarını da göstermiştir.Sapanca gölünün eşsiz manzarası ve geniş yurt imkanlarıyla kampüsümüz, hayatınızın önemli yıllarının bir kısmını geçirirken mutlu olmanızı da sağlayacaktır.  
