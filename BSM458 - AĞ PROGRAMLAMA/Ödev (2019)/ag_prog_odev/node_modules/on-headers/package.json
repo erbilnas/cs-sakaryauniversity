@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      "on-headers@~1.0.1",
+      "/mnt/c/xampp/htdocs/ag_prog_odev/node_modules/express-session"
+    ]
+  ],
+  "_from": "on-headers@>=1.0.1 <1.1.0",
+  "_hasShrinkwrap": false,
+  "_id": "on-headers@1.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/on-headers",
+  "_nodeVersion": "8.15.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/on-headers_1.0.2_1550807334461_0.2296705941712791"
+  },
+  "_npmUser": {
+    "email": "doug@somethingdoug.com",
+    "name": "dougwilson"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "on-headers",
+    "raw": "on-headers@~1.0.1",
+    "rawSpec": "~1.0.1",
+    "scope": null,
+    "spec": ">=1.0.1 <1.1.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/express-session"
+  ],
+  "_resolved": "https://registry.npmjs.org/on-headers/-/on-headers-1.0.2.tgz",
+  "_shasum": "772b0ae6aaa525c399e489adfad90c403eb3c28f",
+  "_shrinkwrap": null,
+  "_spec": "on-headers@~1.0.1",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_odev/node_modules/express-session",
+  "author": {
+    "email": "doug@somethingdoug.com",
+    "name": "Douglas Christopher Wilson"
+  },
+  "bugs": {
+    "url": "https://github.com/jshttp/on-headers/issues"
+  },
+  "dependencies": {},
+  "description": "Execute a listener when a response is about to write headers",
+  "devDependencies": {
+    "eslint": "5.14.1",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-markdown": "1.0.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "istanbul": "0.4.5",
+    "mocha": "6.0.1",
+    "supertest": "3.4.2"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 5,
+    "integrity": "sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcb3EnCRA9TVsSAnZWagAAJ74P/1Wi5XP0E+17U7xu01zR\nnaF1VUbte8DFEouoT4ZgQH9ope94hmbAOW6QrMq2S0FxuTTzZFuDSyKBeQ2g\n2JrwURxitZGU36AX+WuPlQ5+Zw5pmDXk6UjdsA8DpNTOCE6T0N7mKS1KQFFH\nantgfK6JJSRYN1Pv0PIsLFrANaWo2j+tgu+c0Eir0fBk7dEe3Q82B9oaDpP8\nKuJ6jDLC7pz/qcJIdUErE6OaNknALNF0GaqW9ikJgthgZvNsMcA5jP7V3CVg\nmnO20iDAGuDRmTjPdDOThrLPX4oYF5p+xWO6LqxHr2oO/f+NrIRrlJu9JQeP\nFHhqCbh9LEBy6gcg7U+XgIuaFHO0Ujy0hu/rs39TowjuQOuQW9QR58UphGtY\ncDe4lRvwDf86XW+vT65ps/gSABNm8hO/ShPi2A5rVlxIPv+RSWrC3Ril+8CA\n6znvDPyrbB5MuAQB5CZ1Jq9Z0AJ+Js/iNrKjxEwaht1JWmH9LN2PzCe2Upk9\n/4s1u4FsPvExwRWyCDgUnvM3bcNg/ksz9E+OMs6B63I+ywW2iFnpXDzFVKLA\np2TB/bhfRYlgf0lK6KNy8B3Z+iTaPX9ie5aRimU7wZaml0jlh0kwzPxwJyPz\nSEI4ssy0yxHXw+d9DDBl4OOTycrM+fSIrL/qKkWaS/6foiGc/cMsgt/YYMww\nBpKq\r\n=27fC\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "772b0ae6aaa525c399e489adfad90c403eb3c28f",
+    "tarball": "https://registry.npmjs.org/on-headers/-/on-headers-1.0.2.tgz",
+    "unpackedSize": 7538
+  },
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "gitHead": "c05140cde9bbce2127926752433271c6f3fe8787",
+  "homepage": "https://github.com/jshttp/on-headers#readme",
+  "keywords": [
+    "event",
+    "headers",
+    "http",
+    "onheaders"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    }
+  ],
+  "name": "on-headers",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshttp/on-headers.git"
+  },
+  "scripts": {
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "version": "node scripts/version-history.js && git add HISTORY.md"
+  },
+  "version": "1.0.2"
+}

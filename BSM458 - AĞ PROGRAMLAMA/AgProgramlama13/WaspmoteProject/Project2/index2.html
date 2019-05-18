@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+    <title>WaspMote x,y,z Verileri</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="./bootstrap.min.js"></script>
+	<link href="./font-awesome.min.css" rel="stylesheet">
+	<!-- nodejs siz test için 
+    <script type="text/javascript" src="./JS/jquery.min.js"></script>
+    <link rel="stylesheet" href="./JS/bootstrap.min.css">
+    <script src="./JS/bootstrap.min.js"></script>
+	<link href="./JS/font-awesome.min.css" rel="stylesheet">-->
+	
+
+    <style>
+      
+    </style>
+	
+    <style>
+	.ui-helper-center {
+		text-align: center;
+	}	
+    </style>
+
+
+
+    <script type="text/javascript" src="./dist/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+
+    <script type="text/javascript" src="./dist/plugins/jqplot.dateAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.logAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.highlighter.min.js"></script>
+    <script type="text/javascript" src="./socket.io-1.2.0.js"></script>
+    <!--<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" hrf="./dist/jquery.jqplot.min.css" />
+	<script type="text/javascript" src="socket.io-1.2.0.js"></script>
+    <link rel="stylesheet" type="text/css" hrf="./jquery-ui.css" />
+
+</head>
+<body>
+
+<div class="container"> 
+<script type="text/javascript">
+
+	function toggle(button)
+	{
+		var buttonid="#"+button.id;
+		switch(button.value)
+		{
+		case "ON":
+		   button.value = "OFF";
+		   $(buttonid).removeClass( "btn-success" ).addClass( "btn-danger" );
+		   break;
+		case "OFF":
+			$(buttonid).removeClass( "btn-danger" ).addClass( "btn-success" );;
+			button.value = "ON";
+			break;
+		}
+		socket.emit('digitalIO',button.id, button.value=="OFF"?0:1);
+	}
+	 
+</script>
+
+<nav class="navbar navbar-default">
+
+  
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+	// temperature
+		google.charts.load('current', {'packages':['gauge','corechart']});
+	
+		var temp=50;
+      google.charts.setOnLoadCallback(drawGauge);
+      function drawGauge() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Temperature', temp],
+        ]);
+
+        var options = {
+          width: 400, height: 120,
+          redFrom: 90, redTo: 100,
+          yellowFrom:75, yellowTo: 90,
+          minorTicks: 5
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+      
+      }
+    
+	// battery
+	var batterylevel =90;
+       //google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart); //otomatik çizdirme
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+		  ['Dolu',      batterylevel],
+          ['Bos',     100-batterylevel],
+          
+        ]);
+
+        var options = {
+          //title: 'Battery Level'
+		  legend: 'none',
+
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+	  var socket = io();   
+			function getData (data,sensorName){
+				//console.log(data.sensor[sensorName]);
+				return data.sensor[sensorName];	
+			};
+            
+            var myDatax =  [[0,0]];
+            var myDatay = [[0,0]];
+            var myDataz = [[0,0]];
+            socket.on('alldata', function(msg){
+
+
+
+                var dataArray = msg.split(':');
+                $('#messages').html($('<li>').text(dataArray[0]+':'+dataArray[1]+':'+dataArray[2]+':'+dataArray[3]+':'+dataArray[4]));
+                var x = (new Date()).getTime();
+                batterylevel =parseInt(dataArray[4]);
+                drawChart();
+                temp=parseInt(dataArray[3]);
+                drawGauge();
+
+
+               /* var dataArray = getData(msg,"ACC").split(';');
+                //$('#messages').html($('<li>').text(dataArray[0]+':'+dataArray[1]+':'+dataArray[2]));
+                $('#messages').html($('<li>').text(JSON.stringify(msg)));
+                var x = (new Date()).getTime();
+				batterylevel = parseInt(getData(msg,"BAT")); drawChart();
+				temp = parseInt(getData(msg,"temp")); drawGauge();*/
+				
+				
+
+                var yx = parseFloat(dataArray[0]);
+                var yy = parseFloat(dataArray[1]);
+                var yz = parseFloat(dataArray[2]);
+                myDatax.push([x, yx]);
+                myDatay.push([x, yy]);
+                myDataz.push([x, yz]);
+            });
+            var plot1 = $.jqplot('chart1', [myDatax, myDatax, myDataz], {
+                
+                series: [
+                    {
+                        //   yaxis: 'y2axis',
+
+                        lineWidth: 1.0,//2.2,
+                        color: '#0571B6',
+
+                        markerOptions: { style:'dimaond' }
+                    },
+
+
+
+                    {
+                        // Change our line width and use a diamond shaped marker.
+                        lineWidth:2,
+                        markerOptions: { style:'circle' }
+                    },
+                    {
+                        // Don't show a line, just show markers.
+                        // Make the markers 7 pixels with an 'x' style
+                        showLine:false,
+                        markerOptions: { size: 7, style:"x" }
+                    }
+                ],
+                axes: {
+                    xaxis: {
+                        renderer: $.jqplot.DateAxisRenderer,
+						  tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+                        tickOptions: {
+                            formatString: '%H:%M:%S',
+							angle: -50
+                        },
+                      
+                        numberTicks: 10,
+                        label:'Zaman',
+                        labelOptions:{
+                            fontFamily:'Arial',
+                            fontSize: '14pt'
+                        },
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+
+                    },
+                    yaxis: {   //  y2axis: {
+                        // renderer:$.jqplot.LogAxisRenderer,
+                        min: -100,
+                        max: 250,
+                        tickOptions: {
+                            formatString: '%.2f',
+                            angle:-30
+                        },
+                        tickRenderer:$.jqplot.CanvasAxisTickRenderer,
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+
+                        numberTicks: 15,
+                        //label:'X, Y,Z Değer',
+                        labelOptions:{
+                            fontFamily:'Arial',
+                            fontSize: '14pt'
+                        },
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+                    }
+
+                },
+                cursor: {
+                    zoom: false,
+                    showTooltip: false,
+                    show: false
+                },
+                highlighter: {
+                    useAxesFormatters: true,
+                    showMarker: true,
+                    show: false
+                },
+                grid: {
+                    drawGridLines: true,        // wether to draw lines across the grid or not.
+                    gridLineColor: '#cccccc',    // *Color of the grid lines.
+                    background: '#fffdf6',      // CSS color spec for background color of grid.
+                    borderColor: '#999999',     // CSS color spec for border around grid.
+                    borderWidth: 2.0,           // pixel width of border around grid.
+                    shadow: true,               // draw a shadow for grid.
+                    shadowAngle: 45,            // angle of the shadow.  Clockwise from x axis.
+                    shadowOffset: 1.5,          // offset from the line of the shadow.
+                    shadowWidth: 3,             // width of the stroke for the shadow.
+                    shadowDepth: 3,             // Number of strokes to make when drawing shadow.
+                                                // Each stroke offset by shadowOffset from the last.
+                    shadowAlpha: 0.07,           // Opacity of the shadow
+                    renderer: $.jqplot.CanvasGridRenderer // renderer to use to draw the grid.
+                }
+            });
+
+
+            plot1.series[0].data = myDatax;
+            plot1.series[1].data = myDatay;
+            plot1.series[2].data = myDataz;
+            plot1.resetAxesScale();
+            plot1.axes.xaxis.numberTicks = 10;
+            plot1.axes.y2axis.numberTicks = 15;
+            plot1.replot();
+
+            function updateSeries() {
+
+
+
+                myDatax.splice(0,myDatax.length-10);
+                myDatay.splice(0,myDatay.length-10);
+                myDataz.splice(0,myDataz.length-10);
+
+                plot1.series[0].data = myDatax;
+                plot1.series[1].data = myDatay;
+                plot1.series[2].data = myDataz;
+                plot1.resetAxesScale();
+                plot1.axes.xaxis.numberTicks = 10;
+                plot1.axes.y2axis.numberTicks = 15;
+                plot1.replot();
+            }
+
+            window.setInterval(updateSeries, 1000);
+
+
+
+        });
+
+
+
+    </script>
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Çıkış Denetim Paneli (Eyleyici)</h3>
+	</div>
+	<div class="panel-body">
+	<div class="btn-group" role="group" >
+	<!-- Table -->
+	  <table class="table">
+	  <thead>
+			  <tr>
+				<th class="ui-helper-center">I/0 1</th>
+				<th class="ui-helper-center">I/0 2</th>
+				<th class="ui-helper-center">I/0 3</th>
+				<th class="ui-helper-center">I/0 4</th>
+				<th class="ui-helper-center">I/0 5</th>
+				<th class="ui-helper-center">I/0 6</th>
+				<th class="ui-helper-center">I/0 7</th>
+				<th class="ui-helper-center">I/0 8</th>
+			  </tr>
+			</thead>
+			
+			  <tbody>
+			  <tr>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="1" type="button" id="1" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="2" type="button" id="2" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="3" type="button" id="3" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="4" type="button" id="4" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="5" type="button" id="5" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="6" type="button" id="6" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="7" type="button" id="7" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+				<td class="ui-helper-center"><input class="btn btn-default btn-danger" socketNo="8" type="button" id="8" value="OFF" style="color:blue" onclick="toggle(this);"></td>
+
+			  </tr>
+			</tbody>
+	  </table>
+		
+	</div>
+	</div>
+</div>
+</div>
+</div>
+<!----------------Grafik------------>
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-primary ">
+	<div class="panel-heading ">
+		<h3 class="panel-title">Gerçek Zamanlı Algılayıcı Verileri</h3>
+	</div>
+	<div class="panel-body">
+		<div class="col-md-6 ">
+			<div class="panel panel-default" id="icerik">
+				<div class="panel-heading">X,Y,Z Konum Değişim (İvme) Bilgisi</div>
+				<div class="panel-body">
+					<div class="plot" style="height: 300px;" id="chart1"></div>
+				</div>
+			</div>
+		 </div>
+		
+		<div class="col-md-3">
+			<div class="panel panel-default" id="icerik1">
+				<div class="panel-heading">Batarya Seviyesi
+				</div>
+				<div class="panel-body">
+					<div id="piechart" style="margin-top:55px; margin-bottom:55px; height:190px; " ></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="panel panel-default" id="icerik2">
+				<div class="panel-heading">RTC İç Sıcalık Bilgisi
+				</div>
+				<div class="center-block">  
+				<div class=" panel-body">
+						<div id="chart_div" style="margin-top:90px; margin-bottom:10px; margin-left:40px;  height: 200px;"></div>
+				</div>
+				</div>
+			</div>
+		 </div>
+		
+
+		
+	
+
+	</div>	
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Gerçek Zamanlı Algılayıcı Verileri</h3>
+	</div>
+	   <div class="panel-body">
+			<div id="messages"> Connecting...</div>
+	
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

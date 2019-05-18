@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      "node.js",
+      "/mnt/c/xampp/htdocs/ag_prog_proje"
+    ]
+  ],
+  "_from": "node.js@latest",
+  "_id": "node.js@0.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/node.js",
+  "_npmUser": {
+    "email": "feifei-wan@163.com",
+    "name": "wanfei1006"
+  },
+  "_npmVersion": "1.3.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "node.js",
+    "raw": "node.js",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz",
+  "_shasum": "508e06f96b9d9bf87fe6bfa84eceb31794fc1c87",
+  "_shrinkwrap": null,
+  "_spec": "node.js",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje",
+  "author": "",
+  "dependencies": {
+    "express": "~3.4.0"
+  },
+  "description": "fei",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "508e06f96b9d9bf87fe6bfa84eceb31794fc1c87",
+    "tarball": "https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz"
+  },
+  "license": "BSD-2-Clause",
+  "main": "./lib/interface.js",
+  "maintainers": [
+    {
+      "name": "wanfei1006",
+      "email": "feifei-wan@163.com"
+    }
+  ],
+  "name": "node.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.0"
+}

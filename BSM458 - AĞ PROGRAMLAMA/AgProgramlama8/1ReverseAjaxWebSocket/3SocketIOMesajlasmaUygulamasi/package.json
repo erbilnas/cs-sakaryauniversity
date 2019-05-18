@@ -1,0 +1,27 @@
+{
+  "name": "mesajlasmauygulamasi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "morgan": "^1.9.0",
+    "socket.io": "^2.1.0",
+    "xml2json": "^0.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": " ",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/celalceken/AgProgramlama"
+  },
+  "author": "Celal Çeken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/celalceken/AgProgramlama"
+  }
+}

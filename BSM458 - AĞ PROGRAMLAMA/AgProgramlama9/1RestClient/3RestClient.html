@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+  Öğrenci No: <input type="text" id="ogrenciNo">
+
+  Adi: <input type="text" id="result">
+
+  <script>
+      $(document).ready( function () {
+          $('#ogrenciNo').blur(function()
+          {
+
+              $.ajax({
+                  type: 'GET',
+                  url: 'http://localhost:8080/RestAPI/Ogrenciler/'+$('#ogrenciNo').val(),
+                  dataType: 'json',
+                  success: function(result)
+                  {
+                      $('#result').val(result[0].adi);
+                  },
+                  error: function ()
+                  { alert("hata");
+                  }
+              });
+          });
+      });
+  </script>
+
+</body>
+
+
+</html>

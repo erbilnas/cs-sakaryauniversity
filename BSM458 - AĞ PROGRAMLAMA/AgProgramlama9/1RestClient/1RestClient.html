@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="application/json">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#kullaniciAdi').blur(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: "https://api.github.com/users/" + $('#kullaniciAdi').val(),
+                    dataType: "json",
+                    success: function (data) {
+                        $('#ayrinti').html(JSON.stringify(data));
+                        alert(data.html_url);
+
+                    },
+                    error: function () {
+                        console.log('error');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+Git kullanıcı adı: <input type="text" id="kullaniciAdi">     <!--B111212134-->
+<div id="ayrinti"> </div>
+</body>
+</html>

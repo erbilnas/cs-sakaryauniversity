@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      "pstree.remy@^1.1.6",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/nodemon"
+    ]
+  ],
+  "_from": "pstree.remy@>=1.1.6 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "pstree.remy@1.1.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/pstree.remy",
+  "_nodeVersion": "8.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/pstree.remy_1.1.6_1544804823707_0.3752670535489697"
+  },
+  "_npmUser": {
+    "email": "remy@leftlogic.com",
+    "name": "remy"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "pstree.remy",
+    "raw": "pstree.remy@^1.1.6",
+    "rawSpec": "^1.1.6",
+    "scope": null,
+    "spec": ">=1.1.6 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/nodemon"
+  ],
+  "_resolved": "https://registry.npmjs.org/pstree.remy/-/pstree.remy-1.1.6.tgz",
+  "_shasum": "73a55aad9e2d95814927131fbf4dc1b62d259f47",
+  "_shrinkwrap": null,
+  "_spec": "pstree.remy@^1.1.6",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/nodemon",
+  "author": {
+    "name": "Remy Sharp"
+  },
+  "dependencies": {},
+  "description": "Collects the full tree of processes from /proc",
+  "devDependencies": {
+    "tap": "^11.0.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dist": {
+    "fileCount": 9,
+    "integrity": "sha512-NdF35+QsqD7EgNEI5mkI/X+UwaxVEbQaz9f4IooEmMUv6ZPmlTQYGjBPJGgrlzNdjSvIy4MWMg6Q6vCgBO2K+w==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcE9nYCRA9TVsSAnZWagAACZYQAJxtJpf1DC+O0anOtlZz\n36EY1+9uplTigj8AWN/t6bKE+Zxpl+Tp6/3iKgFmTFeD/pK2PIEk9u8OQyqw\nEYim4ELMrO/1tUi7qmWxeFLVOrizTKRT28XcqG2ADHSrsArZioPO0Eavocgt\nfE1cQ1Gb9I0WDp8PXgAJZNPbHf/PKEJyDx6Gz6joIC1SELkn/DZWyc1Styp/\nq/eyEtmEiM3XfU/2zHAnewOLXtmgtBXp6ZDJyKYs8S7Ej+UNwYbHCQm+gXAh\nuVV3StX6AZ3HOmVaq1OKoc7zNTAbbKK5/VqbDzA82I2PGDTqAU+/u0VFaME5\nVz6KO2EfqVbMWHOXABX6DYM0vVVOqk6CZJy+eZFlyl4e/bj/TSGBeSKkrR8n\nB9ykVj9DQiJ45pLjpp1CBQ0vT9ShnZKd/grLibXHldEc/7NcqFr5QJmbtnOK\nyPKRtzkRhXXe9/G11xHjLVWUWCZNLoIPuH+bvNVeqsOsSYr7GJAsdRlKR8Wt\nmLEbcwctR/4yRxQvATfYj1je/l+TCPfsqDkO5MUnU1IvLqzC/Ngwjdin7grb\nXJn0Ta9TF/OdRGbinGOOn2L3lPDU9AEFav3sHrg6x7BrlWwC0dncVGuA2DHz\n12xMJuLvTZ+nH8Cs8E9oGOrl2fFBDQOBC6n/yo6cJ9Mroj3lA4jXDmAae2SA\nyXVx\r\n=cRoe\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "73a55aad9e2d95814927131fbf4dc1b62d259f47",
+    "tarball": "https://registry.npmjs.org/pstree.remy/-/pstree.remy-1.1.6.tgz",
+    "unpackedSize": 12622
+  },
+  "gitHead": "880e1d506b48ed508dc6aef0208dd0399e3b44d6",
+  "keywords": [
+    "ps",
+    "ps tree",
+    "pstree"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "remy",
+      "email": "remy@leftlogic.com"
+    }
+  ],
+  "name": "pstree.remy",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "tap tests/*.test.js"
+  },
+  "version": "1.1.6"
+}

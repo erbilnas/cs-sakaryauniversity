@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      "sphp",
+      "/mnt/c/xampp/htdocs/ag_prog_odev"
+    ]
+  ],
+  "_from": "sphp@latest",
+  "_hasShrinkwrap": false,
+  "_id": "sphp@0.6.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/sphp",
+  "_nodeVersion": "10.11.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/sphp_0.6.3_1550443953233_0.2881576652280162"
+  },
+  "_npmUser": {
+    "email": "simon.riget@gmail.com",
+    "name": "paragi"
+  },
+  "_npmVersion": "6.5.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "sphp",
+    "raw": "sphp",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/sphp/-/sphp-0.6.3.tgz",
+  "_shasum": "cece8d95f16ed548a55dea56ca892ac56b5eada5",
+  "_shrinkwrap": null,
+  "_spec": "sphp",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_odev",
+  "author": {
+    "email": "simon.riget@gmail.com",
+    "name": "Paragi Aps, Simon Rigét"
+  },
+  "bugs": {
+    "url": "https://github.com/paragi/sphp/issues"
+  },
+  "dependencies": {},
+  "description": "A snappy PHP execution module / middleware",
+  "devDependencies": {
+    "body-parser": "^1",
+    "chai": "^4.1.2",
+    "express": "^4",
+    "express-session": "^1",
+    "mocha": "^4.1.0",
+    "request": "^2.69.0",
+    "ws": "^3"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dist": {
+    "fileCount": 21,
+    "integrity": "sha512-rB/3K4iClf2gIrqH1kO6p2jmIkAeGaL0QbcTz7nKuswdZuDgeP4/XtzqfHkE0+2UOTk5NFRtt9f/gVujY+KtWw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcaeWxCRA9TVsSAnZWagAAHfMQAKJOCatJLVJZibQuaMAQ\np/5CKVKsao4M3koocqpwr+nuLf/MX1B94zRgTOrCQjYa7dRr33allLfvnkYw\n4a27/0FCZN3OPW0P0NltOuxmRWbpR+63umfmwyY91MevZ9nI2ZMdZDxq3YxC\nf119gyo+C6e6iWQ1VYMoxGzTtT8mohyGA7CtRBIfq82H8BZiBEoGBtznyZKV\nsiFFGeOb2lPthlrKdtj7wg+Bkaj74GpJOvygsUEZ1LaL8aJD7ReJlMTVkmY3\nyJukbADQCuHuyyibCfA3DJjBGD559qJbdlrNBh/PWfpsOfllE7lTMbOFXIPv\n1pfC3g3/qJzKj/3YiF6jpK9PuEwbDupsPCNc3Vii3IHs/coXHtIwyDqMidX4\nNgJ+mpl9IUbe/VOQBcv0RxTtqY6lbeTsMMz03bpDy/CN1/nA3maPxQSzZDuX\nY6ZipBM2KrDr92Q1hTC/SA/hf6Prh6PORFw28xR1tU6RA/unk0ngKq8rEzbf\nP55Yxxk/IrCSB3Nsmic4NtcBlsS008xxSc8q9a3nSTmanpsNiX9koxQAlXCm\niSmKzv3U95fUDToz8WDlqe1zEyIQrOJPFk7L4dcjiTQtYMS0FKNyiRF0YC3v\nIEeP48jiAUHReQMn7o8h03rfmq9hKfbF/4vuKKAo0IUyf7gKWM0xGE8b1wjA\nXmRG\r\n=x67C\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "cece8d95f16ed548a55dea56ca892ac56b5eada5",
+    "tarball": "https://registry.npmjs.org/sphp/-/sphp-0.6.3.tgz",
+    "unpackedSize": 173182
+  },
+  "gitHead": "18d740d5476477a923fb9a693bc288823902c303",
+  "homepage": "https://github.com/paragi/sphp#readme",
+  "keywords": [
+    "cgi",
+    "execute",
+    "fast",
+    "php",
+    "script",
+    "session",
+    "snap",
+    "snappy",
+    "websocket"
+  ],
+  "license": "MIT",
+  "main": "sphp.js",
+  "maintainers": [
+    {
+      "name": "paragi",
+      "email": "simon.riget@gmail.com"
+    }
+  ],
+  "name": "sphp",
+  "optionalDependencies": {},
+  "peerDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paragi/sphp.git"
+  },
+  "runkitExampleFilename": "browser.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --exit"
+  },
+  "version": "0.6.3"
+}

@@ -1,0 +1,19 @@
+
+Node Modules and the Node Package Manager (npm)
+
+
+> sudo apt-get install npm   #kurulum
+
+> npm init   #Proje başlatmak için kullanılır
+
+package.json dosyası projenizin kurulumunu ve çalıştırılmasını sağlar.
+
+> npm install -g express        # global olarak yükle
+> npm ls -g --depth=0           # yüklü paketleri göster
+> npm uninstall -g express      # global yüklü paketi kaldır
+> npm install express@3.0.0     # yerel olarak 3.0.0 sürümünü yükle
+> npm install express           # son sürümünü yerele yükle
+> npm install express@3.0.0    # sürüm 3.x.x i yükle (patch (~), minor(^) düzeltme(revision))
+> npm install express@3.0.0 --save --save-exact  #package.json dosyasına da yaz ("express": "3.0.0" diye yazar. save-exact demeseydik "^3.0.0" yazacaktı).
+
+

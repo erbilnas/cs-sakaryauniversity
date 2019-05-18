@@ -1,0 +1,23 @@
+{
+  "ogrenciler": [
+    {
+      "ogrenciNo": "00000000001",
+      "adi": "Ayşe",
+      "soyadi": "Yılmaz",
+      "telefon": {
+        "ev": "12345678",
+        "is": "87654321"
+      }
+    },
+    {
+      "ogrenciNo": "00000000002",
+      "adi": "Mehmet",
+      "soyadi": "Yıldız",
+      "telefon": {
+        "ev": "09090909",
+        "is": "98989898"
+      }
+    }
+  ]
+
+}

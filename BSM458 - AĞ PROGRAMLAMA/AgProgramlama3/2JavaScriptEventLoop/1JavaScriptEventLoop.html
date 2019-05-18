@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <script src="../Uygulamalar/JS/jquery-1.9.1.js">
+
+        $(document).ready(function()
+        {
+
+            $('#gelenMesajlar').append($('<p>').text("1. Merhaba"));
+            $('#gelenMesajlar').append($('<p>').text("2. Dünya"));
+
+
+            setTimeout(function timeout() {   //timer API (event) (Tarayıcı içerisinde tanımlıdır (C++)- ayrı bir thread oluşturulur.)
+                // çalıştırılır ve onunla ilgili event listener(timeout)eklenir. Bu süre sonunda timer API olay yayar (event emiting) ve
+                // timeout() listener bu olayın gereğini yerine getirmek için task queue içerisine eklenir.
+
+                $('#gelenMesajlar').append($('<p>').text("3.  5sn sonra(en az)bu mesaj görüntülenecek"));
+
+
+            }, 5000);
+
+            $('#gelenMesajlar').append($('<p>').text("4. Yeni mesaj"));
+
+            $('#gonder').mouseover(function() { // Event (mouseover API): farenin nese üzerine gelmesi event listener: onclick()
+                $('#gelenMesajlar').append($('<p>').text("5. mouse over"));
+            });
+
+            $('#gonder').click(function() { // Event: butona basılması event listener: onclick()
+                $('#gelenMesajlar').append($('<p>').text("6. mouse click"));
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-6">
+
+                <div class=" well" >
+                    <p class="lead text-info "> <strong>Event Loop Mekanizması</strong> </p>
+                </div>
+
+                <div class="well">
+
+                        <button id="gonder">Gönder</button>
+
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+
+                        <h3>Çıkış Ekranı</h3>
+
+                    </div>
+                    <div id="gelenMesajlar" class="panel-body" style="height: 300px; overflow-x: hidden; overflow-y: scroll; text-align: justify;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

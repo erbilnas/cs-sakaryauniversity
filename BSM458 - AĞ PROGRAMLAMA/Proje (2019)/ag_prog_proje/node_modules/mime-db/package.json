@@ -1,0 +1,131 @@
+{
+  "_args": [
+    [
+      "mime-db@~1.39.0",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/mime-types"
+    ]
+  ],
+  "_from": "mime-db@>=1.39.0 <1.40.0",
+  "_hasShrinkwrap": false,
+  "_id": "mime-db@1.39.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/mime-db",
+  "_nodeVersion": "8.15.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/mime-db_1.39.0_1554430122853_0.8714978089749246"
+  },
+  "_npmUser": {
+    "email": "doug@somethingdoug.com",
+    "name": "dougwilson"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "mime-db",
+    "raw": "mime-db@~1.39.0",
+    "rawSpec": "~1.39.0",
+    "scope": null,
+    "spec": ">=1.39.0 <1.40.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/mime-types"
+  ],
+  "_resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.39.0.tgz",
+  "_shasum": "f95a20275742f7d2ad0429acfe40f4233543780e",
+  "_shrinkwrap": null,
+  "_spec": "mime-db@~1.39.0",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/mime-types",
+  "bugs": {
+    "url": "https://github.com/jshttp/mime-db/issues"
+  },
+  "contributors": [
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "Jonathan Ong",
+      "email": "me@jongleberry.com",
+      "url": "http://jongleberry.com"
+    },
+    {
+      "name": "Robert Kieffer",
+      "email": "robert@broofa.com",
+      "url": "http://github.com/broofa"
+    }
+  ],
+  "dependencies": {},
+  "description": "Media Type Database",
+  "devDependencies": {
+    "bluebird": "3.5.4",
+    "co": "4.6.0",
+    "cogent": "1.0.1",
+    "csv-parse": "3.2.0",
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "gnode": "0.1.2",
+    "mocha": "6.0.2",
+    "nyc": "13.3.0",
+    "raw-body": "2.3.3",
+    "stream-to-array": "2.3.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 6,
+    "integrity": "sha512-DTsrw/iWVvwHH+9Otxccdyy0Tgiil6TWK/xhfARJZF/QFhwOgZgOIvA2/VIGpM8U7Q8z5nDmdDWC6tuVMJNibw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcprirCRA9TVsSAnZWagAAiV4QAJo09LTUiZBT9ela3OSr\nk5RB9/Z3QQnbOdFuoqQe8EtgP0jUli6/JY6QEc4HD38IuItqe5HuCBH5m0nn\n847UJF4bAHGHcIpVrUClsu3nTh8OPATmXoYqUxKianVE7aJ8YCBPjPQN6JHJ\nIFT/XI3eshE0qrCJmWlhNG54cHr8LDVHVnuG8fG/l08lXKq9cljj93G5Tq32\nscrNgUqcRfE9Csq+Er678c+N+V+FXgr5X1AOEqcytLz/zmSP2cH12eL+6ndJ\nzx5sM5FG9Bjrdib6RyixvuKBX41TsTGkVTWkMw3hADfuckT1j00WOsAqM9yh\np8AWE9uxZl1pJ438m7W3HMRK+aVVcwbjj1rSIKIBj69/P2vIe5+PSS7qaOkD\nLpW5eYFEiVLrxFMOPccpUbbKaB+hkF/5eqxo0eFib+g+xLkYQei3jf6n+iVg\nZQITvj4UXv1/kPxPfmHrK8HRHN7irak5sRFqdgyCqM4uOrbW5451TJF6sIM3\nfpYK910N7tU6wVOpOZv65wc0s/Z4n2p+evXjWyaY0DzOmbyA6Y6u6daWzsfD\nUv0j/P/xFfAoYuNXJo6vXAIQjlMCbpp1uuVrKu8xSLtQolY8OtQX3/I5Iuuy\nRdjEhacp2dCJKbWmc9WGUjG450OsD22CIe9yHxeswugo7oNBOLtPaDbARS66\nz2xU\r\n=B2vL\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "f95a20275742f7d2ad0429acfe40f4233543780e",
+    "tarball": "https://registry.npmjs.org/mime-db/-/mime-db-1.39.0.tgz",
+    "unpackedSize": 187666
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "gitHead": "8beb4223f9c8d0e36f438747359f0f6465cfd0b7",
+  "homepage": "https://github.com/jshttp/mime-db#readme",
+  "keywords": [
+    "charset",
+    "charsets",
+    "database",
+    "db",
+    "mime",
+    "type",
+    "types"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "jongleberry",
+      "email": "jonathanrichardong@gmail.com"
+    }
+  ],
+  "name": "mime-db",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshttp/mime-db.git"
+  },
+  "scripts": {
+    "build": "node scripts/build",
+    "fetch": "node scripts/fetch-apache && gnode scripts/fetch-iana && node scripts/fetch-nginx",
+    "lint": "eslint .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "nyc --reporter=html --reporter=text npm test",
+    "test-travis": "nyc --reporter=text npm test",
+    "update": "npm run fetch && npm run build",
+    "version": "node scripts/version-history.js && git add HISTORY.md"
+  },
+  "version": "1.39.0"
+}

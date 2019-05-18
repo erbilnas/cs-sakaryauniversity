@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+    <title>ÖBS Giriş Ekranı</title>
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+    <link href="CSS/Bicim.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+<div class="well" style="background-color:#563D7C; color: #FFFFFF; margin-left: 0px; border-left-width: 2px;
+        border-left-color: #191906; border-right-width: 2px; border-right-color: #191906">
+
+        <h2 style="text-align: left">Öğrenci Bilgi Sistemi Uygulaması</h2>
+        <p class="lead">Güvenli Olmayan Öğrenci Bilgi Sistemi Uygulaması</p>
+</div>
+
+<div class="container">
+
+
+
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Lütfen giriş yapınız</h2>
+                <label for="personelNo" class="sr-only">Numara</label>
+                <input type="text" id="personelNo" name="personelNo" class="form-control" placeholder="Numarınız" required autofocus oninvalid="this.setCustomValidity('Geçerli bir değer giriniz...')"> <!--type="email"-->
+                <label for="sifre" class="sr-only">Şifre</label>
+                <input type="password" id="sifre" name="sifre" class="form-control" placeholder="Şifreniz" required oninvalid="this.setCustomValidity('Geçerli bir değer giriniz...')">
+                <div class="alert alert-danger" id="mesaj">
+                    <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox-success" name="kisi" value="akademik" checked="checked"> Akademik Personel
+                    </label>
+                    <label>
+                        <input type="checkbox" class="mycheckbox" name="kisi" value="ogrenci"> Öğrenci
+                    </label>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit" id="giris">Giriş</button>
+            </form>
+
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script   type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#mesaj').hide();
+        $("#personelNo").focus(function()
+        {
+            $('#mesaj').hide();
+
+        });
+        $("#giris").click(function()
+        {
+
+
+            var personelNo = $('#personelNo').val();
+            var sifre = $('#sifre').val();
+
+            if(!personelNo || !sifre)
+            {
+                // alert("boş olamaz");
+                return;
+            }
+
+            var form_data=$('form :input').serialize();
+
+            $.ajax(
+                    {
+                        url : "/login",
+                        type : 'POST',
+                        dataType : 'json',
+                        data : form_data,
+                        success : function(data)
+                        {
+
+                            if (data['sonuc']=='1')
+                            {
+                                window.location = '/AnaSayfa';
+
+                            }
+                            else
+                            {
+                                $("#mesaj").html("Kayıt Yok").slideDown("1500");
+                            }
+
+                        },
+                        error : function()
+                        {
+                            alert("Hata meydana geldi. Lütfen tekrar deneyiniz !!!");
+                        }
+                    });
+
+            return false;
+        });
+
+        $(".checkbox").click(function() { //alert("a");
+            $(".mycheckbox").prop(checked,false);
+
+            //$(this).siblings('input:checkbox').prop('checked', false);
+        });
+
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+os:
+  - linux
+  - osx
+language: node_js
+node_js:
+  - "4"
+  - "6"
+  - "8"
+before_install:
+  - 'if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then travis_wait brew tap homebrew/homebrew-php; fi'
+  - 'if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then travis_wait brew update; fi'
+  - 'if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then travis_wait 30 brew install --with-cgi php71; fi'
+  - 'if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"; fi'
+  - export PHP_PATH="$(which php-cgi)"
+  - echo $PHP_PATH
+  - php-cgi -v
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - sourceline: 'ppa:ondrej/php'
+    packages:
+    - g++-4.8
+    - php7.1-cgi

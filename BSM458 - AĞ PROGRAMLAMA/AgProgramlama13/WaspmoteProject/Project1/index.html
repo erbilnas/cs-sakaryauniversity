@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+    <title>WaspMote Sıcaklık Verileri</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 13px Helvetica, Arial; }
+        form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+        form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li { padding: 5px 10px; }
+        #messages li:nth-child(odd) { background: #eee; }
+    </style>
+
+
+   <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/plugins/jqplot.dateAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/plugins/jqplot.logAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost/HomeAutomation/JS/dist/plugins/jqplot.highlighter.min.js"></script>-->
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/dist/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/dist/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+
+    <script type="text/javascript" src="http://localhost:8080/dist/plugins/jqplot.logAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/dist/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/dist/plugins/jqplot.highlighter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/jquery.jqplot.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/smoothness/jquery-ui.css" />
+
+
+</head>
+<body>
+
+<div class="container">
+    <ul id="messages">mesajlar...</ul>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <!--<script>
+      var socket = io();
+      /*$('form').submit(function(){
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+      });*/
+      socket.on('temperature', function(msg){
+        $('#messages').append($('<li>').text(msg));
+      });
+    </script>-->
+
+
+    <!----------------Grafik------------>
+    <div id="chart1" class="plot" style="width:700px;height:500px;">Çizim</div>
+
+    <script type="text/javascript">
+        var socket = io();
+        var myData = [[1,1],[2,2],[3,3],[4,4],[5,5]];
+        var counter=0;
+
+
+        $(document).ready(function() {
+            socket.on('temperature', function(msg){
+                $('#messages').html($('<li>').text(msg));
+                var x = (new Date()).getTime();
+                var y = parseFloat(msg);
+                myData.push([x, y]);
+
+            });
+            var plot1 = $.jqplot('chart1', [new Array(1)], {
+                title: 'Acceleration: Live X Value',
+                series: [
+                    {
+                        //   yaxis: 'y2axis',
+                        label: '',
+                        showMarker: false,
+                        fill: false,
+                        neighborThreshold: 3,
+                        lineWidth: 1.0,//2.2,
+                        color: '#0571B6',
+                        fillAndStroke: true}
+                ],
+                axes: {
+                    xaxis: {
+                        renderer: $.jqplot.DateAxisRenderer,
+                        tickOptions: {
+                            formatString: '%H:%M:%S',
+                            angle: -50
+                        },
+                        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+                        numberTicks: 10,
+                        label:'Time',
+                        labelOptions:{
+                            fontFamily:'Arial',
+                            fontSize: '14pt'
+                        },
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+
+                    },
+                    yaxis: {   //  y2axis: {
+                        // renderer:$.jqplot.LogAxisRenderer,
+                        min: -100,
+                        max: 250,
+                        tickOptions: {
+                            formatString: '%.2f',
+                            labelPosition: 'middle',
+                            angle:-30
+                        },
+                        tickRenderer:$.jqplot.CanvasAxisTickRenderer,
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+
+                        numberTicks: 15,
+                        label:'X Value',
+                        labelOptions:{
+                            fontFamily:'Arial',
+                            fontSize: '14pt'
+                        },
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+                    }
+
+                },
+                cursor: {
+                    zoom: false,
+                    showTooltip: false,
+                    show: false
+                },
+                highlighter: {
+                    useAxesFormatters: true,
+                    showMarker: true,
+                    show: false
+                },
+                grid: {
+                    drawGridLines: true,        // wether to draw lines across the grid or not.
+                    gridLineColor: '#cccccc',    // *Color of the grid lines.
+                    background: '#fffdf6',      // CSS color spec for background color of grid.
+                    borderColor: '#999999',     // CSS color spec for border around grid.
+                    borderWidth: 2.0,           // pixel width of border around grid.
+                    shadow: true,               // draw a shadow for grid.
+                    shadowAngle: 45,            // angle of the shadow.  Clockwise from x axis.
+                    shadowOffset: 1.5,          // offset from the line of the shadow.
+                    shadowWidth: 3,             // width of the stroke for the shadow.
+                    shadowDepth: 3,             // Number of strokes to make when drawing shadow.
+                                                // Each stroke offset by shadowOffset from the last.
+                    shadowAlpha: 0.07,           // Opacity of the shadow
+                    renderer: $.jqplot.CanvasGridRenderer // renderer to use to draw the grid.
+                }
+            });
+
+
+            plot1.series[0].data = myData;
+            plot1.resetAxesScale();
+            plot1.axes.xaxis.numberTicks = 10;
+            plot1.axes.y2axis.numberTicks = 15;
+            plot1.replot();
+
+            function updateSeries() {
+
+
+
+                myData.splice(0,myData.length-10);
+
+                plot1.series[0].data = myData;
+                plot1.resetAxesScale();
+                plot1.axes.xaxis.numberTicks = 10;
+                plot1.axes.y2axis.numberTicks = 15;
+                plot1.replot();
+            }
+
+            window.setInterval(updateSeries, 1000);
+
+
+
+        });
+
+
+
+    </script>
+
+
+</div>
+
+</body>
+</html>

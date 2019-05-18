@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="41cd_catalog1.css" type="text/css"?>
+<CATALOG>
+	<CD>
+		<TITLE>Empire Burlesque</TITLE>
+		<ARTIST>Bob Dylan</ARTIST>
+		<COUNTRY>USA</COUNTRY>
+		<COMPANY>Columbia</COMPANY>
+		<PRICE>10.90</PRICE>
+		<YEAR>1985</YEAR>
+	</CD>
+
+</CATALOG>

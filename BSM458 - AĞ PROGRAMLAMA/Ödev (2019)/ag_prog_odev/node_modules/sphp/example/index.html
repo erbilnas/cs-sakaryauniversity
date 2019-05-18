@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Snappy PHP</title>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<script type="text/javascript">
+
+
+// Make websocket connection
+ws = new WebSocket('ws://'+window.document.location.host);
+console.log('ws://'+window.document.location.host);
+
+// Create event handler for "incomming websockets mesages"
+ws.onmessage = function (msg) {
+  document.getElementById("websocketOutputArea").innerHTML+=
+  "Message received at "+ (new Date())+"<br>"+msg.data;
+  console.log(msg);
+};
+
+ws.onerror=function(error) {
+  console.log("Websocket error: ", error);
+};
+
+
+// Register callback function to websocket events
+
+ws.on = function(event,callback){
+  ws.receiver[event]=callback;
+//co
+
+nsole.info(res.event,"Receivers: ",ws.receiver,':',callback);
+}
+
+</script>
+</head>
+<body>
+<h1>Snappy PHP</h1>
+This is a HTML page
+<div class="tile" onclick="ws.send('Please send globals');">PHP GLOBALS from script</div>
+<div class="tile" onclick="ws.send('Browser request');">PHP GLOBALS from websocket
+</div>
+<br>
+<div>
+websocket output area: <br>
+<div class="container" id="websocketOutputArea"></div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+{
+  "name": "LDR",
+  "version": "",
+  "author": "Celal Çeken",
+  "license": "MIT",
+  "description": "Arduino PIR and Temperature Sensors",
+  "main": "Server.js",
+  "dependencies": {
+    "serialport": "^7.1.4",
+    "mqtt": "^2.18.8"
+  },
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/celalceken/IoTApplications"
+  },
+  "bugs": {
+    "url": "https://github.com/celalceken/IoTApplications/issues"
+  }
+}

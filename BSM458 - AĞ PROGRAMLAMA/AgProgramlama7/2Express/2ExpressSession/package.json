@@ -1,0 +1,25 @@
+{
+  "name": "expresssession",
+  "version": "1.0.0",
+  "description": "Session management in NodeJS",
+  "author": "celalceken",
+  "license": "MIT",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "connect": "^3.6.6",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "^2.5.8",
+    "express": "4.0.0",
+    "express-session": "^1.7.6",
+    "mongoose": "^5.0.12",
+    "morgan": "~1.7.0",
+    "passport-local": "^1.0.0"
+  }
+
+}

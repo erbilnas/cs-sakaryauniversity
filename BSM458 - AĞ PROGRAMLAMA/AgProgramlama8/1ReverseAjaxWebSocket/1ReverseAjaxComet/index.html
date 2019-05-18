@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+
+
+        <div class="panel panel-success">
+            <div class="panel-heading">Duyurular</div>
+            <div class="panel-body" id="duyurular">Panel Content</div>
+        </div>
+
+    <button id="getGitHubInfo">deneme</button>
+
+
+</div>
+
+<script>
+    $(function() {
+        var timestamp = null;
+
+        function comet() {
+            //alert("istek gönderildi");
+            $.ajax({
+                type : 'get',
+                url  : 'read.php?timestamp=' + timestamp,
+                async : true,
+                cache : false,
+                dataType:'json',
+
+                success : function(data) {
+
+                    $('#duyurular').html(data.msg);
+                    timestamp  = data.timestamp; //Son değişikliğin gönderildiği zaman
+
+                    comet();//setTimeout(comet(),5000);
+                },
+                error : function(XMLHttpRequest, textstatus, error) {
+                    alert(error);
+                    setTimeout(comet(), 5000);
+                }
+            });
+        }
+
+        comet();
+
+        $("#getGitHubInfo").click(function(){
+            $.ajax({url: "https://api.github.com/users/celalceken", success: function(result){
+                    //$("#div1").html(result);
+                    alert(JSON.stringify(result));
+                }});
+        });
+
+    });
+
+</script>
+</body>
+</html>

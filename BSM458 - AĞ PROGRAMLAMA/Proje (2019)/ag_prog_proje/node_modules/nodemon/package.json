@@ -1,0 +1,130 @@
+{
+  "_args": [
+    [
+      "nodemon",
+      "/mnt/c/xampp/htdocs/ag_prog_proje"
+    ]
+  ],
+  "_from": "nodemon@latest",
+  "_hasShrinkwrap": false,
+  "_id": "nodemon@1.19.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/nodemon",
+  "_nodeVersion": "11.15.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nodemon_1.19.0_1556694604514_0.8864068367052265"
+  },
+  "_npmUser": {
+    "email": "remy@leftlogic.com",
+    "name": "remy"
+  },
+  "_npmVersion": "6.7.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "nodemon",
+    "raw": "nodemon",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodemon/-/nodemon-1.19.0.tgz",
+  "_shasum": "358e005549a1e9e1148cb2b9b8b28957dc4e4527",
+  "_shrinkwrap": null,
+  "_spec": "nodemon",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje",
+  "author": {
+    "name": "Remy Sharp",
+    "url": "http://github.com/remy"
+  },
+  "bin": {
+    "nodemon": "./bin/nodemon.js"
+  },
+  "bugs": {
+    "url": "https://github.com/remy/nodemon/issues"
+  },
+  "dependencies": {
+    "chokidar": "^2.1.5",
+    "debug": "^3.1.0",
+    "ignore-by-default": "^1.0.1",
+    "minimatch": "^3.0.4",
+    "pstree.remy": "^1.1.6",
+    "semver": "^5.5.0",
+    "supports-color": "^5.2.0",
+    "touch": "^3.1.0",
+    "undefsafe": "^2.0.2",
+    "update-notifier": "^2.5.0"
+  },
+  "description": "Simple monitor script for use during development of a node.js app.",
+  "devDependencies": {
+    "@commitlint/cli": "^3.1.3",
+    "@commitlint/config-angular": "^3.1.1",
+    "async": "1.4.2",
+    "coffee-script": "~1.7.1",
+    "husky": "^0.14.3",
+    "istanbul": "^0.4.5",
+    "jscs": "^3.0.7",
+    "mocha": "^2.3.3",
+    "proxyquire": "^1.8.0",
+    "semantic-release": "^8.2.0",
+    "should": "~4.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 42,
+    "integrity": "sha512-NHKpb/Je0Urmwi3QPDHlYuFY9m1vaVfTsRZG5X73rY46xPj0JpNe8WhUGQdkDXQDOxrBNIU3JrcflE9Y44EcuA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcyUZNCRA9TVsSAnZWagAALncP/2aBPeSzeXTTziz+EiVm\n1URmanBYnPHwUj0WoLU00z/IrYMHXqQSQtKcuTXaKx0G40g3vCkAc+J3goLJ\nieIStyT5MgCl2cQp1fDDD2rc513pBmMRiPKhhZWbWNArBSbZx3a81WYtgdtU\nWayfGsLfb+z81FJzrjWLCaI56Mhio0/clL4E5cqaUj6uE3MyX+3Jyg2IHvFK\n3WsmLUnIypalNcXeWAoJg0xUh/GUGMa+t+4l4pymdojooaatqklIS786AzlP\nUB5B3idrFQTTbq8TqSUaGxnhy6d+F5IuoCC/JOHaXoZebCiTnv6wLK8rOJ6B\nB7zFily3WDfhkvyHdxpigDh0Zk24IY9Ii6foLbVo3MsGTYft1D3/oA+F9/sc\nWisgQ7nro7qfsbmOYmTYATD8brE5i//N84ytbbMQdTO+BwcF3EYkluw+90xX\njJi7C6goBIlxTInrZeOZL8aAEmUy0VOXTNwIFKKXOB9iPfQyWU2vggVkkrTw\ns9KDrVf0hfRDmL10felVtO8Gyso81/+04PPTnK/QHjiF+wDntHDuZM5RNjGc\nZ7anso1ICfM+bnkc1598JQtZYBbLdFth9QmDPrVMwDadWaWw1eDQODvpH+rt\npyqhcYvk92RGnmXos25Ctl3empSdN03OPlYVxsObGxFBKezsk6Q3KOM3cx5d\nyXa0\r\n=mxKU\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "358e005549a1e9e1148cb2b9b8b28957dc4e4527",
+    "tarball": "https://registry.npmjs.org/nodemon/-/nodemon-1.19.0.tgz",
+    "unpackedSize": 104246
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "gitHead": "20ccb623c4dbdbc9445085ba72ca7ab90f5bffcb",
+  "homepage": "http://nodemon.io",
+  "keywords": [
+    "autoload",
+    "development",
+    "monitor",
+    "reload",
+    "restart",
+    "terminal"
+  ],
+  "license": "MIT",
+  "main": "./lib/nodemon",
+  "maintainers": [
+    {
+      "name": "remy",
+      "email": "remy@leftlogic.com"
+    }
+  ],
+  "name": "nodemon",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remy/nodemon.git"
+  },
+  "scripts": {
+    ":spec": "mocha --timeout 30000 --ui bdd test/**/*.test.js",
+    "clean": "rm -rf test/fixtures/test*.js test/fixtures/test*.md",
+    "commitmsg": "commitlint -e",
+    "coverage": "istanbul cover _mocha -- --timeout 30000 --ui bdd --reporter list test/**/*.test.js",
+    "killall": "ps auxww | grep node | grep -v grep | awk '{ print $2 }' | xargs kill -9",
+    "lint": "jscs lib/**/*.js -v",
+    "postinstall": "node bin/postinstall || exit 0",
+    "postspec": "npm run clean",
+    "prepush": "npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "spec": "for FILE in test/**/*.test.js; do echo $FILE; TEST=1 mocha --exit --timeout 30000 $FILE; if [ $? -ne 0 ]; then exit 1; fi; sleep 1; done",
+    "test": "npm run lint && npm run spec",
+    "web": "node web"
+  },
+  "version": "1.19.0"
+}

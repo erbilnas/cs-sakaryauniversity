@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<title>Arduino LDR</title>
+
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+	<link href="js/bootstrap.min.css" rel="stylesheet">
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		$(document).ready(function(){
+			const socket = io();
+			socket.on('SunucudanIstemcilere', function(sunucudanGelenVeri) {
+				$('#gelenVeriElementi').html(sunucudanGelenVeri);
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+<div class="container">
+	<h1 class="display-1 text-center">RFID Etiket Değeri-UID</h1>
+	<h1 id="gelenVeriElementi"class="display-1 text-center">dfadgfa</h1>
+
+</div>
+
+
+
+</body>
+</html>

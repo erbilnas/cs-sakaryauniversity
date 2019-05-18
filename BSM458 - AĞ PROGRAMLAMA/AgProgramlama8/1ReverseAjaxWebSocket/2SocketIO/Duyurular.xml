@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<duyurular>
+
+
+
+    <duyuru>
+        <duyuruNo>1</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı Bir</duyuruAyrinti>
+
+    </duyuru>
+
+    <duyuru>
+        <duyuruNo>2</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı Bir</duyuruAyrinti>
+
+    </duyuru>
+
+    <duyuru>
+        <duyuruNo>3</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı Bir</duyuruAyrinti>
+
+    </duyuru>
+
+    <duyuru>
+        <duyuruNo>4</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı Bir</duyuruAyrinti>
+
+    </duyuru>
+
+    <duyuru>
+        <duyuruNo>5</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı Bir</duyuruAyrinti>
+
+    </duyuru>
+
+
+
+</duyurular>

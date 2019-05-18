@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      "ipaddr.js@1.9.0",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/proxy-addr"
+    ]
+  ],
+  "_from": "ipaddr.js@1.9.0",
+  "_hasShrinkwrap": false,
+  "_id": "ipaddr.js@1.9.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ipaddr.js",
+  "_nodeVersion": "10.15.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ipaddr.js_1.9.0_1549785081591_0.5220196467104794"
+  },
+  "_npmUser": {
+    "email": "whitequark@whitequark.org",
+    "name": "whitequark"
+  },
+  "_npmVersion": "5.8.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ipaddr.js",
+    "raw": "ipaddr.js@1.9.0",
+    "rawSpec": "1.9.0",
+    "scope": null,
+    "spec": "1.9.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/proxy-addr"
+  ],
+  "_resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.0.tgz",
+  "_shasum": "37df74e430a0e47550fe54a2defe30d8acd95f65",
+  "_shrinkwrap": null,
+  "_spec": "ipaddr.js@1.9.0",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/proxy-addr",
+  "author": {
+    "email": "whitequark@whitequark.org",
+    "name": "whitequark"
+  },
+  "bugs": {
+    "url": "https://github.com/whitequark/ipaddr.js/issues"
+  },
+  "dependencies": {},
+  "description": "A library for manipulating IPv4 and IPv6 addresses in JavaScript.",
+  "devDependencies": {
+    "coffee-script": "~1.12.6",
+    "nodeunit": ">=0.8.2 <0.8.7",
+    "uglify-js": "~3.0.19"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dist": {
+    "fileCount": 6,
+    "integrity": "sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcX9f6CRA9TVsSAnZWagAACN0P/3QaY26R9gIEKJMFRl3f\nComsl89/ZqAisw026wGodTWmYirIR5IbjDNxWETrCHXdriBCrSsDZ1SzzdGk\nTxkjv5/bQjv4CpPZV5/d91q6vkpFjPbVOk/N+K0fOJkmO9Fp4lwUQq4/B0gi\nEj+lPr1a5j5ZQwpMNB1pZrtoy3Fo/y0d5sYTNEQAlAQfjcJI4mFtc92tkc9s\nnzanygidCfoWEctnJIy9/lUjCxY2Irt8tMBa7cVExOLOqn6KegnJOtC+4g19\nCSjmv+lUj/r9QdT1kTbnej+118OQDjaZmjJ18/mxKdVXsYq6RLxKalWiez6E\nWKzCrMBSfwjDcErkaWr8tLn8b5zwwS5oLYG2pbzwDxA92P81LYeu+3wcmxa1\nPpvKkxBHLkUK1+19Xg0t5IP//B/C6ZCS5q+zckr+97U7SitK7aUajtRc3SYu\notiV+5t1Lgl+WLiymOq3WnBXMJwzXsq7nYBJgUlkoj0IE4Du5DFKao0UNvE2\nSBZTM8MJGm2rsm9xGKqWx9rBqWDudpnGipJIOV6l807BRn0yBrQjbx2jhV48\nK8UrwyOwYE1dwEYzhuviczDvE5o6qriTiFyYfA4DW0w1h3X3VDGWoI81g4dh\nGzP3V8SjsKV8g80HkrU8rboh1UKUIMjhINunU6PBD6YR+2fUqos3YlMxbprM\nOThn\r\n=Tk1a\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "37df74e430a0e47550fe54a2defe30d8acd95f65",
+    "tarball": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.0.tgz",
+    "unpackedSize": 42064
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "gitHead": "8bd045f49f5b7695eea2c93e9706f4350e0bbaba",
+  "homepage": "https://github.com/whitequark/ipaddr.js#readme",
+  "keywords": [
+    "ip",
+    "ipv4",
+    "ipv6"
+  ],
+  "license": "MIT",
+  "main": "./lib/ipaddr.js",
+  "maintainers": [
+    {
+      "name": "whitequark",
+      "email": "whitequark@whitequark.org"
+    }
+  ],
+  "name": "ipaddr.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/whitequark/ipaddr.js.git"
+  },
+  "scripts": {
+    "test": "cake build test"
+  },
+  "types": "./lib/ipaddr.js.d.ts",
+  "version": "1.9.0"
+}

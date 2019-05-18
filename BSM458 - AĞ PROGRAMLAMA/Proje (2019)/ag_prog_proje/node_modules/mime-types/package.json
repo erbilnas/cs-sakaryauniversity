@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      "mime-types@~2.1.18",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/accepts"
+    ]
+  ],
+  "_from": "mime-types@>=2.1.18 <2.2.0",
+  "_hasShrinkwrap": false,
+  "_id": "mime-types@2.1.23",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/mime-types",
+  "_nodeVersion": "8.15.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/mime-types_2.1.23_1555562474870_0.5469095710208383"
+  },
+  "_npmUser": {
+    "email": "doug@somethingdoug.com",
+    "name": "dougwilson"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "mime-types",
+    "raw": "mime-types@~2.1.18",
+    "rawSpec": "~2.1.18",
+    "scope": null,
+    "spec": ">=2.1.18 <2.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/accepts",
+    "/type-is"
+  ],
+  "_resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.23.tgz",
+  "_shasum": "d4eacd87de99348a6858fe1e479aad877388d977",
+  "_shrinkwrap": null,
+  "_spec": "mime-types@~2.1.18",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/accepts",
+  "bugs": {
+    "url": "https://github.com/jshttp/mime-types/issues"
+  },
+  "contributors": [
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "Jeremiah Senkpiel",
+      "email": "fishrock123@rocketmail.com",
+      "url": "https://searchbeam.jit.su"
+    },
+    {
+      "name": "Jonathan Ong",
+      "email": "me@jongleberry.com",
+      "url": "http://jongleberry.com"
+    }
+  ],
+  "dependencies": {
+    "mime-db": "~1.39.0"
+  },
+  "description": "The ultimate javascript content-type utility.",
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "mocha": "6.1.3",
+    "nyc": "14.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 5,
+    "integrity": "sha512-ROk/m+gMVSrRxTkMlaQOvFmFmYDc7sZgrjjM76abqmd2Cc5fCV7jAMA5XUccEtJ3cYiYdgixUVI+fApc2LkXlw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJct//rCRA9TVsSAnZWagAADUcP/1Sx8SZMb+Y0DvqR26zd\nsX74VQgoI4cXQmf1hh/jo2EUpvSK1xxz9H2fQKeF+HPreIhbqretsWfqh4Sd\nsbKVqusZ8xWMz1+Y1whWFzpGMeAe/Fkatka+YgHOsxA9RVcxVVkLCg4PR7ve\n1OxGIUtI5Eqhb7/UTcNY2ha+GwA/RgVnrImoTwNAucLpcaR8KCwpMCd+36nH\n/Rwz6v634o9dHZhvbId/kwpYaoKp3FACuGnmaydheqfv3bm+lqTvLpCCekD6\nTnXI5YJdQWEZp23MVqHCEL3/vYvcck2drlkD8cMLm6Z/6gBGIgvXLqcVnmvQ\nMcJ/MxzGEpaf51594zBAIXcj492IVSw0WN6W+vf0cRyLCqMPGFtRkzJfx/FU\nkp7dkjkpqP41yRWO42dBfSuqRzfPhNr1UPyLjFN6ZSc/MrzijVQKFY0cNmOS\nc81ZSp2RymrE9rJbyZ3DQv9AW4uVy0Was+39+NqtQTMJ6vh7xp+9nUKtnWFy\nQiES2KNAmIOIe4nbNavnbJiFUVzxFqP+NdsKRThXafzYSWJ8URakA3k3u2SK\nHTRbCr18uu+I1ZzZySbvPpE+L6ZzsL3ozbndpei7sDl6QUuHukIjpqH6+M/2\nYmkOnvpDjvNQPbPvqBcZ4zRdpZ3Gqgbu1eZNkwSHyo+tkTaUkZqsw+VlTGwC\nvHXB\r\n=ccqn\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "d4eacd87de99348a6858fe1e479aad877388d977",
+    "tarball": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.23.tgz",
+    "unpackedSize": 15698
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "gitHead": "28b73337cb1aa1583b72d448f30e2f49d6f5f07e",
+  "homepage": "https://github.com/jshttp/mime-types#readme",
+  "keywords": [
+    "mime",
+    "types"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "fishrock123",
+      "email": "fishrock123@rocketmail.com"
+    },
+    {
+      "name": "jongleberry",
+      "email": "jonathanrichardong@gmail.com"
+    }
+  ],
+  "name": "mime-types",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshttp/mime-types.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --reporter spec test/test.js",
+    "test-cov": "nyc --reporter=html --reporter=text npm test",
+    "test-travis": "nyc --reporter=text npm test"
+  },
+  "version": "2.1.23"
+}

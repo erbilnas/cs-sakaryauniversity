@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      "write-file-atomic@^2.0.0",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/configstore"
+    ]
+  ],
+  "_from": "write-file-atomic@>=2.0.0 <3.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "write-file-atomic@2.4.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/write-file-atomic",
+  "_nodeVersion": "11.3.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/write-file-atomic_2.4.2_1548206621021_0.3144530936854546"
+  },
+  "_npmUser": {
+    "email": "me@re-becca.org",
+    "name": "iarna"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "write-file-atomic",
+    "raw": "write-file-atomic@^2.0.0",
+    "rawSpec": "^2.0.0",
+    "scope": null,
+    "spec": ">=2.0.0 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/configstore"
+  ],
+  "_resolved": "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-2.4.2.tgz",
+  "_shasum": "a7181706dfba17855d221140a9c06e15fcdd87b9",
+  "_shrinkwrap": null,
+  "_spec": "write-file-atomic@^2.0.0",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/configstore",
+  "author": {
+    "email": "me@re-becca.org",
+    "name": "Rebecca Turner",
+    "url": "http://re-becca.org"
+  },
+  "bugs": {
+    "url": "https://github.com/iarna/write-file-atomic/issues"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "imurmurhash": "^0.1.4",
+    "signal-exit": "^3.0.2"
+  },
+  "description": "Write files in an atomic fashion w/configurable ownership",
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "require-inject": "^1.4.0",
+    "rimraf": "^2.5.4",
+    "standard": "^12.0.1",
+    "tap": "^12.1.3"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 5,
+    "integrity": "sha512-s0b6vB3xIVRLWywa6X9TOMA7k9zio0TMOsl9ZnDkliA/cfJlpHXAscj0gbHVJiTdIuAYpIyqS5GW91fqm6gG5g==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcR8IdCRA9TVsSAnZWagAA2sMP/Ak3zz3ypibJ7iszwuES\nuDJZrda3zlNFGqWehFDMc6TD/9YxPd6Rgh0Up2LD0+Y6DbddxmHiaPo7H4n7\n12NT3s886JrL3fJ6Nwfd0u0P2JXyA49f8pTfwL8kAUbV/MR5ietvf9wxCAcs\nadjmiow1pwuiJ6KHHoIoDMRd6EmNXe8sEAD/Jj57fAeoTa/UD5K94M7uz1w0\nw7iuXZ/zFT/cL+l0KdMEnBCgj8gDgqVI0rlTh1spUf9PYtppU0ju6OVGlKrS\nfTo+kGOIHAydyzzD7hlELAWtcrI9ZGpn0MtrjCpvlXGonVHnLxz9PKjZlEhN\n3mVTnyELCN7osex52J6hpIL3PA26ta4uV/HsUR+fx1hWoNhdPGOdX05ochiu\n0rQ4EcHSg/hDp0n3jmKNj9LtteDNebGlugNiZLlmR8Cdzgjy4muKmZP+Io8e\nLuQq0IzToxj/C8Kq2mAEIa+zHDo8GZaKOwNow3pbcarZ+gP5gXLgSXvX0lpV\nSNP5+PeoXQo+z0S3iS2wYpwrO45Ugh4ZwAZ/ZeeN9IcSWlKdyxjKZKVULJ66\nJgXjl7W5Hhh9pBwm2WQz66a8oUYwk+r+/+msfu59jX6687EhFIq1EA23b9jN\nwpnXh/tocqtNbnvDZ2pJThV8HJAakSzV8SLAK057oh1Mli1t84t4QrVMvHV+\nsa4w\r\n=MkZv\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "a7181706dfba17855d221140a9c06e15fcdd87b9",
+    "tarball": "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-2.4.2.tgz",
+    "unpackedSize": 11900
+  },
+  "gitHead": "2191d03e97ecf447af30057d752b25fa07c1f32a",
+  "homepage": "https://github.com/iarna/write-file-atomic",
+  "keywords": [
+    "atomic",
+    "writeFile"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "iarna",
+      "email": "me@re-becca.org"
+    },
+    {
+      "name": "othiym23",
+      "email": "ogd@aoaioxxysz.net"
+    },
+    {
+      "name": "zkat",
+      "email": "kzm@sykosomatic.org"
+    }
+  ],
+  "name": "write-file-atomic",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iarna/write-file-atomic.git"
+  },
+  "scripts": {
+    "test": "standard && tap --100 test/*.js"
+  },
+  "version": "2.4.2"
+}

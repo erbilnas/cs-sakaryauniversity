@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      "bignumber.js@4.1.0",
+      "/mnt/c/xampp/htdocs/ag_prog_odev/node_modules/mysql"
+    ]
+  ],
+  "_from": "bignumber.js@4.1.0",
+  "_id": "bignumber.js@4.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/bignumber.js",
+  "_nodeVersion": "8.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bignumber.js-4.1.0.tgz_1506461103217_0.030498685780912638"
+  },
+  "_npmUser": {
+    "email": "M8ch88l@gmail.com",
+    "name": "mikemcl"
+  },
+  "_npmVersion": "5.0.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "bignumber.js",
+    "raw": "bignumber.js@4.1.0",
+    "rawSpec": "4.1.0",
+    "scope": null,
+    "spec": "4.1.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/mysql"
+  ],
+  "_resolved": "https://registry.npmjs.org/bignumber.js/-/bignumber.js-4.1.0.tgz",
+  "_shasum": "db6f14067c140bd46624815a7916c92d9b6c24b1",
+  "_shrinkwrap": null,
+  "_spec": "bignumber.js@4.1.0",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_odev/node_modules/mysql",
+  "author": {
+    "email": "M8ch88l@gmail.com",
+    "name": "Michael Mclaughlin"
+  },
+  "bugs": {
+    "url": "https://github.com/MikeMcl/bignumber.js/issues"
+  },
+  "dependencies": {},
+  "description": "A library for arbitrary-precision decimal and non-decimal arithmetic",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-eJzYkFYy9L4JzXsbymsFn3p54D+llV27oTQ+ziJG7WFRheJcNZilgVXMG0LoZtlQSKBsJdWtLFqOD0u+U0jZKA==",
+    "shasum": "db6f14067c140bd46624815a7916c92d9b6c24b1",
+    "tarball": "https://registry.npmjs.org/bignumber.js/-/bignumber.js-4.1.0.tgz"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "gitHead": "e545d41b2f43874399101ac7ee5098093ac96b6b",
+  "homepage": "https://github.com/MikeMcl/bignumber.js#readme",
+  "keywords": [
+    "arbitrary",
+    "arithmetic",
+    "big",
+    "bigdecimal",
+    "bigint",
+    "biginteger",
+    "bignum",
+    "bignumber",
+    "decimal",
+    "float",
+    "number",
+    "precision"
+  ],
+  "license": "MIT",
+  "main": "bignumber.js",
+  "maintainers": [
+    {
+      "name": "mikemcl",
+      "email": "M8ch88l@gmail.com"
+    }
+  ],
+  "name": "bignumber.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeMcl/bignumber.js.git"
+  },
+  "scripts": {
+    "build": "uglifyjs bignumber.js --source-map bignumber.js.map -c -m -o bignumber.min.js --preamble \"/* bignumber.js v4.1.0 https://github.com/MikeMcl/bignumber.js/LICENCE */\"",
+    "test": "node ./test/every-test.js"
+  },
+  "types": "bignumber.d.ts",
+  "version": "4.1.0"
+}

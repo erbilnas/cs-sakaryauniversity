@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      "bignumber.js@7.2.1",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/mysql"
+    ]
+  ],
+  "_from": "bignumber.js@7.2.1",
+  "_hasShrinkwrap": false,
+  "_id": "bignumber.js@7.2.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/bignumber.js",
+  "_nodeVersion": "10.0.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bignumber.js_7.2.1_1527177317585_0.29303924293970507"
+  },
+  "_npmUser": {
+    "email": "M8ch88l@gmail.com",
+    "name": "mikemcl"
+  },
+  "_npmVersion": "5.0.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "bignumber.js",
+    "raw": "bignumber.js@7.2.1",
+    "rawSpec": "7.2.1",
+    "scope": null,
+    "spec": "7.2.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/mysql"
+  ],
+  "_resolved": "https://registry.npmjs.org/bignumber.js/-/bignumber.js-7.2.1.tgz",
+  "_shasum": "80c048759d826800807c4bfd521e50edbba57a5f",
+  "_shrinkwrap": null,
+  "_spec": "bignumber.js@7.2.1",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/mysql",
+  "author": {
+    "email": "M8ch88l@gmail.com",
+    "name": "Michael Mclaughlin"
+  },
+  "browser": "bignumber.js",
+  "bugs": {
+    "url": "https://github.com/MikeMcl/bignumber.js/issues"
+  },
+  "dependencies": {},
+  "description": "A library for arbitrary-precision decimal and non-decimal arithmetic",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 11,
+    "integrity": "sha512-S4XzBk5sMB+Rcb/LNcpzXr57VRTxgAvaAEDAl1AwRx27j00hT84O6OkteE7u8UB3NuaaygCRrEpqox4uDOrbdQ==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbBuBmCRA9TVsSAnZWagAA9DQP/AsurlYSjjPMJZ5cHlMt\nuUWYGIGzc/0SfWsBh5QHtb4WxZVoA4iwJX+SeK1lqB+DLW0RddWSsMAxGiXI\nW/g2hP2IPTQUtXPj7ZWU+bFA7SFosObVEfuy/LFC0UqqA3V6WfF7xYIpyxhk\nCP9wvG1NPY/KFS8VPN/8LA377teuckVjJ7fsJ+p8eTAauPNjbov2I8axiNe7\nFngWQlCkrdWvBl142ZkSKUcmO0hKsyfkaVPrkcsmrf6CDRCjcsDD+Lu3vEsA\nKlfMk8xcf7tZDoKh8ZRtNnfiVaS4Xp7EUklZqvwOqenvW3Dqi2c+sp1eLWR2\nKPPqQbNQGDDyoDC9R/4c49j31/PUYnq+Wghkd8x1lJHBMlsleCJyMw/grB6h\nhpZ1kDUMwRrwVUxB49QAkk0bqL3sOVfbW23lsQycFuRoHuoGXYLOUJ4SiOR7\nvLNxFG+V+9c6yS+RX3PsYPKoOGEHCjeXFQhLxkqNUExuBfjGxm8SPQQYXvQD\nBNK7ETNrNnpnwBsbQ2UmXhPIRUxPAK2afRX8Ws+R4nydV0gl6K1cdY8gYNGT\nqTlQll6bY+bDhFWpXQ93hdWfLu7nA9gF6Shcgb4Z+lT1c7geCR6SiCZL+QJp\nsv1bLkuULj/lSG/PG6XE8UNMgo4fPKLZzObsLUlN3T9Z8DoCmGW/N982J3hN\nLqsD\r\n=9Aj4\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "80c048759d826800807c4bfd521e50edbba57a5f",
+    "tarball": "https://registry.npmjs.org/bignumber.js/-/bignumber.js-7.2.1.tgz",
+    "unpackedSize": 384618
+  },
+  "engines": {
+    "node": "*"
+  },
+  "gitHead": "38ba62a15c0088ca401f1e3bbd5bdb7acf220fe9",
+  "homepage": "https://github.com/MikeMcl/bignumber.js#readme",
+  "keywords": [
+    "arbitrary",
+    "arithmetic",
+    "big",
+    "bigdecimal",
+    "bigint",
+    "biginteger",
+    "bignum",
+    "bignumber",
+    "decimal",
+    "float",
+    "number",
+    "precision"
+  ],
+  "license": "MIT",
+  "main": "bignumber",
+  "maintainers": [
+    {
+      "name": "mikemcl",
+      "email": "M8ch88l@gmail.com"
+    }
+  ],
+  "module": "bignumber.mjs",
+  "name": "bignumber.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeMcl/bignumber.js.git"
+  },
+  "scripts": {
+    "build": "uglifyjs bignumber.js --source-map bignumber.js.map -c -m -o bignumber.min.js --preamble \"/* bignumber.js v7.2.1 https://github.com/MikeMcl/bignumber.js/LICENCE */\"",
+    "test": "node test/test"
+  },
+  "types": "bignumber.d.ts",
+  "version": "7.2.1"
+}

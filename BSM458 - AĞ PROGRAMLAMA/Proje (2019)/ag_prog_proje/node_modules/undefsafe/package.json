@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      "undefsafe@^2.0.2",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/nodemon"
+    ]
+  ],
+  "_from": "undefsafe@>=2.0.2 <3.0.0",
+  "_id": "undefsafe@2.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/undefsafe",
+  "_nodeVersion": "4.8.7",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/undefsafe_2.0.2_1518681535273_0.5962650788047354"
+  },
+  "_npmUser": {
+    "email": "remy@leftlogic.com",
+    "name": "remy"
+  },
+  "_npmVersion": "2.15.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "undefsafe",
+    "raw": "undefsafe@^2.0.2",
+    "rawSpec": "^2.0.2",
+    "scope": null,
+    "spec": ">=2.0.2 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/nodemon"
+  ],
+  "_resolved": "https://registry.npmjs.org/undefsafe/-/undefsafe-2.0.2.tgz",
+  "_shasum": "225f6b9e0337663e0d8e7cfd686fc2836ccace76",
+  "_shrinkwrap": null,
+  "_spec": "undefsafe@^2.0.2",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/nodemon",
+  "author": {
+    "name": "Remy Sharp"
+  },
+  "bugs": {
+    "url": "https://github.com/remy/undefsafe/issues"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "description": "Undefined safe way of extracting object properties",
+  "devDependencies": {
+    "semantic-release": "^4.3.5",
+    "tap": "^5.7.1",
+    "tap-only": "0.0.5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "fileCount": 9,
+    "shasum": "225f6b9e0337663e0d8e7cfd686fc2836ccace76",
+    "tarball": "https://registry.npmjs.org/undefsafe/-/undefsafe-2.0.2.tgz",
+    "unpackedSize": 6895
+  },
+  "gitHead": "e4180bac3c9d4571dc542eca7d53b4f14c8603fe",
+  "homepage": "https://github.com/remy/undefsafe#readme",
+  "keywords": [
+    "undefined"
+  ],
+  "license": "MIT",
+  "main": "lib/undefsafe.js",
+  "maintainers": [
+    {
+      "name": "remy",
+      "email": "remy@leftlogic.com"
+    }
+  ],
+  "name": "undefsafe",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remy/undefsafe.git"
+  },
+  "scripts": {
+    "cover": "tap test/*.test.js --cov --coverage-report=lcov",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "tap test/**/*.test.js -R spec"
+  },
+  "tonicExampleFilename": "example.js",
+  "version": "2.0.2"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mongooseornegi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "celalceken",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.0.12",
+    "should": "^13.2.1"
+  }
+}

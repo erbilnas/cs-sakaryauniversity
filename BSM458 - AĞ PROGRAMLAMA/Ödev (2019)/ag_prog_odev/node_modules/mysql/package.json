@@ -1,0 +1,141 @@
+{
+  "_args": [
+    [
+      "mysql",
+      "/mnt/c/xampp/htdocs/ag_prog_odev"
+    ]
+  ],
+  "_from": "mysql@latest",
+  "_id": "mysql@2.16.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/mysql",
+  "_nodeVersion": "8.11.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/mysql_2.16.0_1531890486268_0.9096892717002003"
+  },
+  "_npmUser": {
+    "email": "doug@somethingdoug.com",
+    "name": "dougwilson"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "mysql",
+    "raw": "mysql",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/mysql/-/mysql-2.16.0.tgz",
+  "_shasum": "b23b22ab5de44fc2d5d32bd4f5af6653fc45e2ba",
+  "_shrinkwrap": null,
+  "_spec": "mysql",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_odev",
+  "author": {
+    "email": "felix@debuggable.com",
+    "name": "Felix Geisendörfer",
+    "url": "http://debuggable.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/mysqljs/mysql/issues"
+  },
+  "contributors": [
+    {
+      "name": "Andrey Sidorov",
+      "email": "sidorares@yandex.ru"
+    },
+    {
+      "name": "Bradley Grainger",
+      "email": "bgrainger@gmail.com"
+    },
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "Diogo Resende",
+      "email": "dresende@thinkdigital.pt"
+    },
+    {
+      "name": "Nathan Woltman",
+      "email": "nwoltman@outlook.com"
+    }
+  ],
+  "dependencies": {
+    "bignumber.js": "4.1.0",
+    "readable-stream": "2.3.6",
+    "safe-buffer": "5.1.2",
+    "sqlstring": "2.3.1"
+  },
+  "description": "A node.js driver for mysql. It is written in JavaScript, does not require compiling, and is 100% MIT licensed.",
+  "devDependencies": {
+    "after": "0.8.2",
+    "eslint": "4.19.1",
+    "nyc": "10.3.2",
+    "seedrandom": "2.4.3",
+    "timezone-mock": "0.0.7",
+    "urun": "0.0.8",
+    "utest": "0.0.8"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 60,
+    "integrity": "sha512-dPbN2LHonQp7D5ja5DJXNbCLe/HRdu+f3v61aguzNRQIrmZLOeRoymBYyeThrR6ug+FqzDL95Gc9maqZUJS+Gw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbTss2CRA9TVsSAnZWagAAEPYQAJDy7TmIPBatRNcx7dl1\nalHuAbLL5R86v3L5dJ0Y4Lq8oNSh1LKXa0q26osrkFRUpRBqt9wSIEvZR3os\nUzSJFaYGMdJYSDOwd8Hv/Z8KOrzjaguTgl2cZ8/8rW9IBUVaJ6xtNklgpgYz\n6sI6iUrCU/+68XtkHJ7CUh4XPMKPMyKmZoWBpAVN9kp7Yzsovo4HCxm6FCVP\nQ/A+FIXwRlhxQ6CnYxGRQrECgTH2D6kpNem//LiTTa2Egzua3mxwLZcwKxfw\nr4oH27o6KNmCjCfpkcBi0g71XphlKsrOgTsYMT8GRPN55Gpq0JD+Mn22GipM\nEeX1zC4Q15fvLeAKQpZW8yQrTHCqTUeVZ1HTqOSVV/b14ZD2gQ3AAH2Orrv2\nKpVNpAoGBuqXm6FgdD90dIdLYBNJlwOO0TpLQGWEWcavK9JsG9HNaaZzyaEP\nkTdF7QAm7x7a7vrOcF1rZZHrtrG1tszGVbnGmr5HJl9uk5lUu052DdehhJzr\neB2egsnMzpSjuqNFs1vbImy27FvvcYpnAFk7qiEr7gHDLPMFUHs73GDRhhYs\nvrpmyr74OTjybtzfcd3Yzlp35+mgSmGZ8ZfHjniwdE6q3O03N8hBhCcqWQhj\ngnJKWoSrz8tKmhXddgfC/4yQeMeN6RM8XcwCDAnI93zVOKCSnphViBTFSua9\nVFZC\r\n=oi2l\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "b23b22ab5de44fc2d5d32bd4f5af6653fc45e2ba",
+    "tarball": "https://registry.npmjs.org/mysql/-/mysql-2.16.0.tgz",
+    "unpackedSize": 428222
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "files": [
+    "Changes.md",
+    "License",
+    "Readme.md",
+    "index.js",
+    "lib/"
+  ],
+  "gitHead": "cf5d1e396a343ffa0fba23b3791d2dd5da20f30e",
+  "homepage": "https://github.com/mysqljs/mysql#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "felixge",
+      "email": "felix@debuggable.com"
+    },
+    {
+      "name": "nate.lillich",
+      "email": "natalie@lifewanted.com"
+    },
+    {
+      "name": "sidorares",
+      "email": "sidorares@yandex.com"
+    }
+  ],
+  "name": "mysql",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysqljs/mysql.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node test/run.js",
+    "test-ci": "nyc --reporter=text npm test",
+    "test-cov": "nyc --reporter=html --reporter=text npm test",
+    "version": "node tool/version-changes.js && git add Changes.md"
+  },
+  "version": "2.16.0"
+}

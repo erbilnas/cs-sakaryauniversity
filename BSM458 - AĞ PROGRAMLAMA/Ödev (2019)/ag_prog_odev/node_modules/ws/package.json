@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      "ws",
+      "/mnt/c/xampp/htdocs/ag_prog_odev"
+    ]
+  ],
+  "_from": "ws@latest",
+  "_hasShrinkwrap": false,
+  "_id": "ws@6.2.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ws",
+  "_nodeVersion": "11.12.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ws_6.2.1_1553676810270_0.01539710580745246"
+  },
+  "_npmUser": {
+    "email": "luigipinca@gmail.com",
+    "name": "lpinca"
+  },
+  "_npmVersion": "6.7.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ws",
+    "raw": "ws",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ws/-/ws-6.2.1.tgz",
+  "_shasum": "442fdf0a47ed64f59b6a5d8ff130f4748ed524fb",
+  "_shrinkwrap": null,
+  "_spec": "ws",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_odev",
+  "author": {
+    "email": "einaros@gmail.com",
+    "name": "Einar Otto Stangvik",
+    "url": "http://2x.io"
+  },
+  "browser": "browser.js",
+  "bugs": {
+    "url": "https://github.com/websockets/ws/issues"
+  },
+  "dependencies": {
+    "async-limiter": "~1.0.0"
+  },
+  "description": "Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js",
+  "devDependencies": {
+    "benchmark": "~2.1.4",
+    "bufferutil": "~4.0.0",
+    "coveralls": "~3.0.3",
+    "eslint": "~5.15.0",
+    "eslint-config-prettier": "~4.1.0",
+    "eslint-plugin-prettier": "~3.0.0",
+    "mocha": "~6.0.0",
+    "nyc": "~13.3.0",
+    "prettier": "~1.16.1",
+    "utf-8-validate": "~5.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 15,
+    "integrity": "sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcmzoLCRA9TVsSAnZWagAAtEIP/RkNfhGX2vND8luKumDK\n+yGhSf84CsOxXBmfkVLkgQATR6gTeGLpsH1VnLqUcRzBL1sQdNM5bzlhhIHc\npd88Wdsocs0KB8+AootOv+WFz7As6gp0Y4CVEnrTr1jU4QSxbhxb/RbVVwyA\n4WiBvgQPp+AFGtWt1FfUtZkZTURyj9yRDP7xqCmGIuAIa6kZvGV65m82cAve\nP9F65FEcfZGM5996u2kw24pPzJ/aVg0lNrsgiUujHiom73UvIW0qP3u73XpE\nmolxbiAdx0oePTau42100B3Yzod4/uTR3LGvVayl7Jd+4mYaUt08DiXfTJB/\nsVK+W6Wkx/0OyH9sg32EEqCT6f2B4N8PEHvEv9xNst7PnQzpCPufHGlfzu5X\nlCuc27/08KbkpltLghmA1DRAno2ahjpxCIb8hQw5omv63zsuSUMqn9urZEeB\nGGgHLl1NkxbDFrKPpmeP54O5f16/uJQz0Fh+iIN7OV565GLNxQ92qep2+XkU\nV7dpiP2pWky+GTYMmd96FOIp1rj1EsOF8BbwknLZQnMXXOGyEFcMU5qoo0R6\nFRufPIwJvyUQxMyYvlm8BN7OGxzi9DkxFRDKzRF1AbULDDHdHmlGiYe0Iw5P\nt1EeVGEqj52f/1H9z4f2oVnuk7iqSs5KQjs532Bk1Ap177l+g7xF189EEbft\nA0mX\r\n=r0jJ\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "442fdf0a47ed64f59b6a5d8ff130f4748ed524fb",
+    "tarball": "https://registry.npmjs.org/ws/-/ws-6.2.1.tgz",
+    "unpackedSize": 101449
+  },
+  "gitHead": "d57db27daf0e610590e3168266a214201a8c1d3a",
+  "homepage": "https://github.com/websockets/ws",
+  "keywords": [
+    "HyBi",
+    "Push",
+    "RFC-6455",
+    "WebSocket",
+    "WebSockets",
+    "real-time"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "3rdeden",
+      "email": "npm@3rd-Eden.com"
+    },
+    {
+      "name": "einaros",
+      "email": "einaros@gmail.com"
+    },
+    {
+      "name": "lpinca",
+      "email": "luigipinca@gmail.com"
+    },
+    {
+      "name": "v1",
+      "email": "npm@3rd-Eden.com"
+    }
+  ],
+  "name": "ws",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websockets/ws.git"
+  },
+  "scripts": {
+    "integration": "npm run lint && mocha test/*.integration.js",
+    "lint": "eslint --ignore-path .gitignore . && prettier --check --ignore-path .gitignore \"**/*.{json,md,yml}\"",
+    "test": "npm run lint && nyc --reporter=html --reporter=text mocha test/*.test.js"
+  },
+  "version": "6.2.1"
+}

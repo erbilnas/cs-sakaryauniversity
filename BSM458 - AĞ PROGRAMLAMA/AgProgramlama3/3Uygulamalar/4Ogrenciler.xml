@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogrenciler>
+    <ogrenci>
+        <ogrenciNo>00000000001</ogrenciNo>
+        <adi>Ayşe</adi>
+        <soyadi>Yılmaz</soyadi>
+        <telefon>
+            <ev>12345678</ev>
+            <is>87654321</is>
+        </telefon>
+    </ogrenci>
+    <ogrenci>
+        <ogrenciNo>00000000002</ogrenciNo>
+        <adi>Mehmet</adi>
+        <soyadi>Yıldız</soyadi>
+        <telefon>
+            <ev>09090909</ev>
+            <is>98989898</is>
+        </telefon>
+    </ogrenci>
+</ogrenciler>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>Mesajlaşma Uygulaması</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+
+    <div class="col-md-6">
+
+      <div class=" well" >
+        <p class="lead text-info "> <strong>Mesajlaşma Uygulaması</strong> </p>
+      </div>
+
+      <div class="well">
+        <form action="" method="get">
+          <input id="mesaj" /><button>Gönder</button>
+        </form>
+      </div>
+
+      <div class="panel panel-success">
+        <div class="panel-heading">
+
+          <h3>Gelen Mesajlar</h3>
+
+        </div>
+        <div id="gelenMesajlar" class="panel-body" style="height: 300px; overflow-x: hidden; overflow-y: scroll; text-align: justify;">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+
+<!--
+ Sunucunun node_models klasöründen alınıyor
+-->
+<script src="/jquery/dist/jquery.js"></script>
+<script src="/socket.io-client/dist/socket.io.js"></script>
+<script>
+    //var socket = io.connect('http://localhost:8080');
+    var socket = io.connect();
+    $('form').submit(function(){
+        socket.emit('mesaj', $('#mesaj').val());
+        $('#mesaj').val('');
+        return false;
+    });
+
+    socket.on('mesaj', function(gelenMesaj){
+        $('#gelenMesajlar').prepend($('<p>').text(gelenMesaj));
+    });
+</script>
+</body>
+</html>

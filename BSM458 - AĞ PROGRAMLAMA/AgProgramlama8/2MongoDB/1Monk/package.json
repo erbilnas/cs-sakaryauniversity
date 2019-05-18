@@ -1,0 +1,10 @@
+{
+  "name": "SocketIOMongodb",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies":
+  {
+    "should":"11.2.1",
+    "monk": "4.0.0"
+  }
+}

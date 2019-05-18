@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      "express-session",
+      "/mnt/c/xampp/htdocs/ag_prog_proje"
+    ]
+  ],
+  "_from": "express-session@latest",
+  "_hasShrinkwrap": false,
+  "_id": "express-session@1.16.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/express-session",
+  "_nodeVersion": "8.15.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/express-session_1.16.1_1554999929797_0.0983643851272602"
+  },
+  "_npmUser": {
+    "email": "doug@somethingdoug.com",
+    "name": "dougwilson"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "express-session",
+    "raw": "express-session",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/express-session/-/express-session-1.16.1.tgz",
+  "_shasum": "251ff9776c59382301de6c8c33411af357ed439c",
+  "_shrinkwrap": null,
+  "_spec": "express-session",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje",
+  "author": {
+    "email": "tj@vision-media.ca",
+    "name": "TJ Holowaychuk",
+    "url": "http://tjholowaychuk.com"
+  },
+  "bugs": {
+    "url": "https://github.com/expressjs/session/issues"
+  },
+  "contributors": [
+    {
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "Joe Wagner",
+      "email": "njwjs722@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "cookie": "0.3.1",
+    "cookie-signature": "1.0.6",
+    "debug": "2.6.9",
+    "depd": "~2.0.0",
+    "on-headers": "~1.0.2",
+    "parseurl": "~1.3.2",
+    "safe-buffer": "5.1.2",
+    "uid-safe": "~2.1.5"
+  },
+  "description": "Simple session middleware for Express",
+  "devDependencies": {
+    "after": "0.8.2",
+    "cookie-parser": "1.4.4",
+    "eslint": "3.19.0",
+    "eslint-plugin-markdown": "1.0.0",
+    "express": "4.16.4",
+    "istanbul": "0.4.5",
+    "mocha": "6.1.2",
+    "supertest": "4.0.2"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 9,
+    "integrity": "sha512-pWvUL8Tl5jUy1MLH7DhgUlpoKeVPUTe+y6WQD9YhcN0C5qAhsh4a8feVjiUXo3TFhIy191YGZ4tewW9edbl2xQ==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcr2p6CRA9TVsSAnZWagAAwwIP+gOUmr8X4L8bv8cB+gEK\nVddLbWQqj6f0kPvS4aS9CGV4y0msAEy47aaqIgga77+yj34sYVabDvwlgyV5\nUYmiR/jOdQAGdWIkrtfzaWIOyNS7vzcQLr+k2p3CZNwsN7XL5bAYbE3S2+25\nKcJlBNmdh6Ayst6wPgeMfByJ9hCD62u1SMs5JsvLJD9d7PAwFwSmsP0IH4qv\npgbqhlZiJxanld0UvLalAeINASegMW8b5CeNJkexICNNUIrZHQ5OaL39OVxy\njHIKK5x71DnqkhMoF3cCHeFMIanHBNg2XduN9XSrHZ6CYWYKcnz1V6pLJJR/\nPcHAOP++VWYgwhcC5amhd5DPGdGXUI2ySeEsnXD6N48OL2iDAbBijV34OlcB\nz8ZB8B4igX1bT6lZhdo7yVSoUmBgts1se+6GoxuE0T5mEglGudw4CS9gJWbY\nOrVD2rcDOI/Qyv79xalx8VIacxQSwEdHSn3fn+ybYt4ml9InO6Cm1P8DMSEW\nCEicDDGqyDkQmXmb5UXbVhlRTGjQ6nNW/Q7IR75H2ptCI6gwlrJVS4BHiwuK\nIhZYZdLPqr4VY1VhsILXHKRGe9DvWFQk3T/WX09QczStRGudY4VvILztRywS\n85Jsnqrw/Q7pg7y9XkaMDKlWNbIs38GJ7aqArIKnkFlmWunWDMOP+u8hKedK\nl1fU\r\n=ulVX\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "251ff9776c59382301de6c8c33411af357ed439c",
+    "tarball": "https://registry.npmjs.org/express-session/-/express-session-1.16.1.tgz",
+    "unpackedSize": 74629
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "gitHead": "421bb3f320b2bbbb6f5ff386666ecd574a53fec6",
+  "homepage": "https://github.com/expressjs/session#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "defunctzombie",
+      "email": "shtylman@gmail.com"
+    },
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    },
+    {
+      "name": "mscdex",
+      "email": "mscdex@mscdex.net"
+    }
+  ],
+  "name": "express-session",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expressjs/session.git"
+  },
+  "scripts": {
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --require test/support/env --check-leaks --bail --no-exit --reporter spec test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --check-leaks --no-exit --reporter dot test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --check-leaks --no-exit --reporter spec test/",
+    "version": "node scripts/version-history.js && git add HISTORY.md"
+  },
+  "version": "1.16.1"
+}

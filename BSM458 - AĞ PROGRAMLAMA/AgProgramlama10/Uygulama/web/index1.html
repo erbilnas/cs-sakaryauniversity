@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<title>Arduino PIR and Temperature Sensors</title>
+
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+	<link href="js/bootstrap.min.css" rel="stylesheet">
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+	<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"> </script>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		$(document).ready(function(){
+			const socket = io();
+			socket.on('SunucudanIstemcilere', function(sunucudanGelenVeri) {
+				$('#gelenVeriElementi').html(sunucudanGelenVeri);
+				$('#progressBar').css("width",sunucudanGelenVeri/1+"%");
+
+				if(parseInt(sunucudanGelenVeri)<90)
+					$('#progressBar').css("background-color","red");
+				else
+					$('#progressBar').css("background-color","blue");
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+<div class="well" >
+
+	<h3 ><a href="http://www.iotlab.sakarya.edu.tr" target="_blank" class="btn btn-success ">IoTRLab</a>
+		<strong >Internet of Things Research Laboratory</strong></a></h3>
+	<h4><strong>Data Visualization for IoT </strong></h4>
+
+</div>
+
+<div class="container">
+	<h1 class="display-1 text-center">RFID Etiket Değeri-UID</h1>
+	<h1 id="gelenVeriElementi"class="display-1 text-center"></h1>
+
+	<div class="progress">
+		<div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="180" style="width:80%">
+
+		</div>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>

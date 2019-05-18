@@ -1,0 +1,26 @@
+Web Servisleri
+Web Uygulaması: Uç kullanıcılar için geliştirilir.
+Web Servisleri: Sistemlerin birbiriyle haberleşebilmesine olanak sağlar.
+Özellikle nesnelerin interneti yaklaşımıyla birlikte sistemler arası haberleşme daha da önem kazanmaktadır.
+
+
+Kullanım Nedenleri
+Sistemlerin (aynı/farklı tür) birlikte çalışabilmesini (interoperability) sağlamak
+Yazılımların tekrar kullanımı (software reuse)
+
+
+Web Servisi Protokolleri
+REST (REpresentational State Transfer)
+SOAP (Simple Object Access Protocol)
+XML RPC (XML – Remote Procedure Call Protocol)
+...
+
+
+
+------Rest API testi için: Client (PHP Storm, curl, Postman (chrome))-------
+
+
+curl --request GET https://api.github.com/users/kullaniciadiniz
+curl --request GET http://localhost:8080/RestAPI/Ogrenciler
+curl --request GET http://localhost:8080/RestAPI/Ogrenciler/0002
+

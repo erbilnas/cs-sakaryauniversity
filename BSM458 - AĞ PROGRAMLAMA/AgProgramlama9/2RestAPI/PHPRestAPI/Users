@@ -1,0 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: wsan
+ * Date: 01.05.2016
+ * Time: 00:26
+ */
+/*
+echo $_SERVER['QUERY_STRING']."<br>";
+echo $_SERVER['REQUEST_URI']."<br>";*/
+
+
+$func = strtolower(trim(str_replace("/",".",$_SERVER['REQUEST_URI'])));
+$func=explode(".",$func);
+echo end($func);
+
+

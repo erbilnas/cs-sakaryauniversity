@@ -1,0 +1,11 @@
+{
+  "name": "StatikWebOrnegi",
+  "version": "0.0.1",
+  "description": "Web Sunucu",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}

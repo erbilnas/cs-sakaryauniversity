@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Websocket test</title>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<script type="text/javascript">
+  // Make websocket connection and define with script to call on messages
+  ws = new WebSocket('ws://'+window.document.location.host+"/ws_request.php?param=test");
+
+  // Create event handler for "incomming websockets mesages"
+  ws.onmessage = function (msg) {
+    document.getElementById("websocketOutputArea").innerHTML=msg.data +"</br>";
+  };
+
+  // Register callback function to websocket events
+  ws.on = function(event,callback){
+    ws.receiver[event]=callback;
+  }
+
+  // Compose some jason to post, when the user clicks the send button
+  ws.send(JSON.stringify({"Browser": "request"}));
+  
+  usleep
+</script>
+</head>
+
+<body>
+<h1>Snappy PHP</h1>
+This is a HTML page<br>
+<div class="tile" onclick="window.location.href='example.php';">
+Go to PHP page</div>
+
+<div class="tile" onclick="ws.send(post);">
+Show PHP GLOBALS through websocket
+</div>
+<br>
+<div class="container">
+websocket output area: <br>
+<div id="websocketOutputArea"></div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      "depd@~2.0.0",
+      "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/express-session"
+    ]
+  ],
+  "_from": "depd@>=2.0.0 <2.1.0",
+  "_hasShrinkwrap": false,
+  "_id": "depd@2.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/express-session/depd",
+  "_nodeVersion": "8.12.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/depd_2.0.0_1540576375784_0.14703351463172942"
+  },
+  "_npmUser": {
+    "email": "doug@somethingdoug.com",
+    "name": "dougwilson"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "depd",
+    "raw": "depd@~2.0.0",
+    "rawSpec": "~2.0.0",
+    "scope": null,
+    "spec": ">=2.0.0 <2.1.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/express-session"
+  ],
+  "_resolved": "https://registry.npmjs.org/depd/-/depd-2.0.0.tgz",
+  "_shasum": "b696163cc757560d09cf22cc8fad1571b79e76df",
+  "_shrinkwrap": null,
+  "_spec": "depd@~2.0.0",
+  "_where": "/mnt/c/xampp/htdocs/ag_prog_proje/node_modules/express-session",
+  "author": {
+    "email": "doug@somethingdoug.com",
+    "name": "Douglas Christopher Wilson"
+  },
+  "browser": "lib/browser/index.js",
+  "bugs": {
+    "url": "https://github.com/dougwilson/nodejs-depd/issues"
+  },
+  "dependencies": {},
+  "description": "Deprecate all the things",
+  "devDependencies": {
+    "beautify-benchmark": "0.2.4",
+    "benchmark": "2.1.4",
+    "eslint": "5.7.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-markdown": "1.0.0-beta.7",
+    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "safe-buffer": "5.1.2",
+    "uid-safe": "2.1.5"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 6,
+    "integrity": "sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb01R4CRA9TVsSAnZWagAArWcP/jPqhJPVwB4A7UlP7Z79\nKmkIJRegTXb8sBTkFdL8t5TDikX47CViz3qWSktGdJnwY4q/GnLHeOr/+eq6\nXVvkSKLrpOdmDBYbf7DxVepxbWOLVSCAshlnw6XPXhcqOKd2smn1CPA/hgRj\n26YvwMECmyIlcE5RgubUvN4qqOyMhGF7muWjCbqRq3qcGK7hXUqEnrlHxHsY\ndKCnzRw0HbfxYX2QynmyRL1Y9ynQuq2ucTDxuhQf78ElkHAsbSYaEks9unYG\nWGhU8zH4TGOcLrmJ6GsKhZk22JvnxCg3zwgqLwks2EFiG1iojPD4EkjZgcnJ\nt8meOu2nT8JCa6fNpPMWUpYO1aUKmhoOb5KGyMhSsNX/DND+ndSu0kOP9gU1\nCetsBqRTHHH3jUK/NmyAvzMO0X8mk/FxzI+NTqKQKt8r2/Y5IW4A6oDkaRkr\nPSu1s1DpT5mw9gHBA7K0YKuVr6HwQVnd/1io+OyUmNarjXm2lMaXucpZG3+Q\ncWpj4FyrD0vf+/bV9LKTXee3qAJ9UEGNvhJAKUrGTR8vtdM6uMxLnsBe42hR\nsRM2dJ8KnMujdw+lH+sgjtqcYP/G1Gz2cRtfbVWTrc/olODQPBpu2ycIY0nc\ncejka3bMbVHzYaY7+ho/9SfbE/6x9LRlmcHSEiPzUHRSpYY3pskktQDM0bBo\nm15/\r\n=BUpb\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "b696163cc757560d09cf22cc8fad1571b79e76df",
+    "tarball": "https://registry.npmjs.org/depd/-/depd-2.0.0.tgz",
+    "unpackedSize": 27117
+  },
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "gitHead": "6d59c85d093092e65ec77033576417d743079fa0",
+  "homepage": "https://github.com/dougwilson/nodejs-depd#readme",
+  "keywords": [
+    "deprecate",
+    "deprecated"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
+    }
+  ],
+  "name": "depd",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougwilson/nodejs-depd.git"
+  },
+  "scripts": {
+    "bench": "node benchmark/index.js",
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --reporter spec --bail test/",
+    "test-ci": "istanbul cover --print=none node_modules/mocha/bin/_mocha -- --reporter spec test/ && istanbul report lcovonly text-summary",
+    "test-cov": "istanbul cover --print=none node_modules/mocha/bin/_mocha -- --reporter dot test/ && istanbul report lcov text-summary"
+  },
+  "version": "2.0.0"
+}

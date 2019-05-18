@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#ogrenciNo').blur(function()
+            {
+                //alert("deneme");
+                var form_data =
+                    {
+                        id: "'"+$('#ogrenciNo').val()+"'"
+
+                    };
+                $.ajax({
+                    type: 'GET',
+                    //url: 'http://192.168.56.103/AgProgramlama/AgProgramlama9/2RestAPI/PHPRestAPI/api.php/getstudents',
+                    url: 'http://192.168.56.103/AgProgramlama/AgProgramlama9/2RestAPI/PHPRestAPI/api.php/getstudent',
+                    dataType: 'json',
+                    data: form_data,
+                    success: function(result)
+                    {
+                        $('#result').val(result.adi+' '+result.soyadi);
+                    },
+                    error: function ()
+                    { alert("hata");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+  Öğrenci No: <input type="text" id="ogrenciNo">     <!--B111212134-->
+  Adi Soyadı: <input type="text" id="result">
+
+</body>
+</html>
