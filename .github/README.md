@@ -3,7 +3,7 @@
 
 <b>BAŞLAMADAN ÖNCE</b>
 
-Açacağınız pull request'ler ile bu repo'ya destek olabilir, Daha fazla kaynak ve ödev paylaşarak bir sonraki nesillerin öğrenimine katkı da bulunabilirsiniz.
+Açacağınız pull request'ler ile bu repo'ya destek olabilir, daha fazla kaynak ve ödev paylaşarak bir sonraki nesillerin öğrenimine katkı da bulunabilirsiniz.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
