@@ -1,5 +1,12 @@
 # Sakarya Üniversitesi | Bilgisayar ve Bilişim Bilimleri Fakültesi
 
+
+<b>BAŞLAMADAN ÖNCE</b>
+
+Açacağınız pull request'ler ile bu repo'ya destek olabilir, Daha fazla kaynak ve ödev paylaşarak bir sonraki nesillerin öğrenimine katkı da bulunabilirsiniz.
+
+------------------------------------------------------------------------------------------------------------------------------
+
 <b>TARİHÇE</b>
 
 1994 yılında eğitim-öğretime başlayan bölümümüz lisans, yüksek lisans ve doktora programlarının yanı sıra tamamen uzaktan eğitimle verdiğimiz e-Bilişim Teknolojileri Tezsiz Yüksek Lisans programıyla da değişik meslek mezunlarını bilişim uzmanı yapmaya devam edeceğiz.Üniversite-sanayi işbirliğinde Türkiye'de devrim sayılabilecek bir projeyi Ford Otosan'la 2008 Nisan ayında başlattık ve büyük bir başarıyla sürdürüyoruz. Gelişen eğitim kadromuz ile arka arkaya 2 yıl Bilgisayar Mühendisliği bölümleri arasında öğretim elemanı başına en fazla SCI yayın yapma başarılarını da göstermiştir.Sapanca gölünün eşsiz manzarası ve geniş yurt imkanlarıyla kampüsümüz, hayatınızın önemli yıllarının bir kısmını geçirirken mutlu olmanızı da sağlayacaktır.  
@@ -33,9 +40,3 @@ Bilgisayar Mühendisliği Bölümü'nden mezun olanlara Bilgisayar Mühendisi ü
 Sevgili öğrencilerimizin ve mezunlarımızın, insan hayatını kolaylaştıran herhangi uygulamada, topluma ait bir problemin çözümünde yada dünyayı ilgilendiren bir konuda kendisinden beklenen katkıyı en iyi biçimde göstereceğine inancımız tamdır. Bu inançla her biri bilgisayar ve bilişim alanında söz sahibi olacak Bilgisayar Mühendisliği Bölümü öğrencilerimize ve mezunlarımıza sevgilerimi sunar başarılar dilerim.
 
 @Bilgisayar Mühendisliği Bölüm Başkanı
-
-------------------------------------------------------------------------------------------------------------------------------
-
-<b>DİPNOT</b>
-
-Açacağınız pull request'ler ile bu repo'ya destek olabilirsiniz! Daha fazla kaynak ve ödev paylaşarak bir sonraki nesillerin öğrenimine katkı da bulunabilirsiniz.
