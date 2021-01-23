@@ -33,3 +33,9 @@ Bilgisayar Mühendisliği Bölümü'nden mezun olanlara Bilgisayar Mühendisi ü
 Sevgili öğrencilerimizin ve mezunlarımızın, insan hayatını kolaylaştıran herhangi uygulamada, topluma ait bir problemin çözümünde yada dünyayı ilgilendiren bir konuda kendisinden beklenen katkıyı en iyi biçimde göstereceğine inancımız tamdır. Bu inançla her biri bilgisayar ve bilişim alanında söz sahibi olacak Bilgisayar Mühendisliği Bölümü öğrencilerimize ve mezunlarımıza sevgilerimi sunar başarılar dilerim.
 
 @Bilgisayar Mühendisliği Bölüm Başkanı
+
+------------------------------------------------------------------------------------------------------------------------------
+
+<b>DİPNOT</b>
+
+Açacağınız pull request'ler ile bu repo'ya destek olabilirsiniz! Daha fazla kaynak ve ödev paylaşarak bir sonraki nesillerin öğrenimine katkı da bulunabilirsiniz.
